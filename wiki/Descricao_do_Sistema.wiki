@@ -1,4 +1,4 @@
-||<a href = "http://code.google.com/p/promotech/wiki/Equipe">Equipe</a>|||| *Descrição do Sistema* ||
+|| <a href="http://code.google.com/p/promotech">Home</a> ||||<a href = "http://code.google.com/p/promotech/wiki/Equipe">Equipe</a>|||| *Descrição do Sistema* ||
 
 =Descrição do Sistema=
 O que é o projeto?
