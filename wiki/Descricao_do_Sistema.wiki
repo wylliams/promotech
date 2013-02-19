@@ -1,4 +1,4 @@
 || <a href="http://code.google.com/p/promotech">Home</a> ||||<a href = "http://code.google.com/p/promotech/wiki/Equipe">Equipe</a>|||| *Descrição do Sistema* |||| <a href="http://code.google.com/p/promotech/wiki/Casos_de_Uso">Casos de Uso</a> ||
 
 =Descrição do Sistema=
-O que é o projeto?
+O sistema Promo Tech tem como objetivos, auxiliar nos processos administrativos de agencias de promoções. Manter um catalogo de clientes, fornecedores e colaboradores, alem de agendar de maneira rápida e organizada atividades extras em geral.
