@@ -71,18 +71,18 @@ Fluxo de eventos principal
     O cliente informa os dados necessários para o cadastro do promotor:
 
         Nome completo;
-        CPF**;
-        RG**;
+        CPF'**';
+        RG'**';
         Foto;
         Categoria;
         Altura;
         Manequim;
         Peso;
         Número do calçado;
-        Telefone Fixo** e Celular;
-        Email**;
+        Telefone Fixo'**' e Celular;
+        Email'**';
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o promotor já foi cadastrado a partir de seu telefone                                           celular.
@@ -155,18 +155,18 @@ Fluxo de eventos principal
     O cliente informa os dados necessários para a edição do Promotor:
 
         Nome completo;
-        CPF**;
-        RG**;
+        CPF'**';
+        RG'**';
         Foto;
         Categoria;
         Altura;
         Manequim;
         Peso;
         Número do calçado;
-        Telefone Fixo** e Celular;
-        Email**;
+        Telefone Fixo'**' e Celular;
+        Email'**';
 
-                **Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o Promotor já foi cadastrado a partir de seu telefone celular.
@@ -194,14 +194,14 @@ Fluxo de eventos principal
     O cliente informa os dados necessários para o cadastro do Coordenador:
 
         Nome completo;
-        CPF**;
-        RG**;
-        Foto**;
-        Telefone Fixo** e Celular;
-        Email**;
-        Anexo de curriculum**;
+        CPF'**';
+        RG'**';
+        Foto'**';
+        Telefone Fixo'**' e Celular;
+        Email'**';
+        Anexo de curriculum'**';
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o Coordenador já foi cadastrado a partir de seu telefone                                           celular.
@@ -249,7 +249,7 @@ Fluxo de eventos principal
 
 Fluxos secundários
 
-    Se o usuário selecionar um coordenadorr que não esteja cadastrado o sistema deve gerar uma mensagem “Nenhum coordenador encontrado”.
+    Se o usuário selecionar um coordenador que não esteja cadastrado o sistema deve gerar uma mensagem “Nenhum coordenador encontrado”.
 
 *Exclusão*
 
@@ -257,7 +257,7 @@ Fluxo de eventos principal
 
     O usuário seleciona o coordenador na listagem e seleciona a opção de excluir.
     O sistema deve excluir o coordenador.
-    O sistema gera uma mensagem informando “O coordenador foi excluido com sucesso!”.
+    O sistema gera uma mensagem informando “O coordenador foi excluído com sucesso!”.
 
 
 Fluxos secundários
@@ -271,13 +271,13 @@ Fluxo de eventos principal
     O cliente informa os dados necessários para a edição do coordenador:
 
         Nome completo;
-        CPF**;
-        RG**;
+        CPF'**';
+        RG'**';
         Telefone Fixo** e Celular;
-        Email**;
-        Anexo de curriculum**;
+        Email'**';
+        Anexo de curriculum'**';
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o Coordenador já foi cadastrado a partir de seu telefone                                           celular.
@@ -321,7 +321,7 @@ Fluxos secundários
 
 Fluxo de eventos principal
 
-    O usuário pode fornecer um filtro para buscar as categorias de protudos  por nome. Se nada for fornecido no filtro, o sistema executa a busca por todas as categorias de produtos;
+    O usuário pode fornecer um filtro para buscar as categorias de produtos  por nome. Se nada for fornecido no filtro, o sistema executa a busca por todas as categorias de produtos;
     O sistema faz a busca de categorias de produtos no banco.
     O sistema lista os seguintes campos das categorias de produtos encontrados:
 
@@ -352,7 +352,7 @@ Fluxo de eventos principal
 
     O usuário seleciona a categoria de produto na listagem e seleciona a opção de excluir.
     O sistema deve excluir a categoria de produto.
-    O sistema gera uma mensagem informando “A categoria de produto foi excluida com sucesso!”.
+    O sistema gera uma mensagem informando “A categoria de produto foi excluída com sucesso!”.
 
 
 Fluxos secundários
@@ -368,7 +368,7 @@ Fluxo de eventos principal
         Nome da categoria de produto;.
 
     O sistema verifica se a categoria de produto já foi cadastrada.
-    O sistema atuliza os dados do Produto no banco de dados.
+    O sistema atualiza os dados do Produto no banco de dados.
     O sistema exibe uma mensagem de sucesso para o usuário.
 
 
@@ -393,11 +393,11 @@ Fluxo de eventos principal
     O cliente informa os dados necessários para o cadastro do fornecedor:
 
         Nome;
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
         Categorias de produtos;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o fornecedor já foi cadastrado a partir de seu telefone fixo.
@@ -422,11 +422,11 @@ Fluxo de eventos principal
     O sistema lista os seguintes campos dos fornecedores encontrados:
 
         Nome;
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
         Categorias de produtos;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
 
 Fluxos secundários
@@ -441,11 +441,11 @@ Fluxo de eventos principal
     O sistema lista os seguintes campos dos fornecedores encontrados:
 
         Nome;
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
         Categorias de produtos;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
 Fluxos secundários
 
@@ -457,7 +457,7 @@ Fluxo de eventos principal
 
     O usuário seleciona o fornecedor na listagem e seleciona a opção de excluir.
     O sistema deve excluir o fornecedor.
-    O sistema gera uma mensagem informando “O fornecedor foi excluido com sucesso!”.
+    O sistema gera uma mensagem informando “O fornecedor foi excluído com sucesso!”.
 
 
 Fluxos secundários
@@ -479,7 +479,7 @@ Fluxo de eventos principal
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o fornecedor já foi cadastrado a partir de seu telefone                                           celular.
-    O sistema atuliza os dados do promotor no banco de dados.
+    O sistema atualiza os dados do promotor no banco de dados.
     O sistema exibe uma mensagem de sucesso para o usuário.
 
 
@@ -540,16 +540,16 @@ Fluxo de eventos principal
 
     O cliente informa os dados necessários para o cadastro do cliente:
 
-        Pessoa fisica ou Juridica;
+        Pessoa física ou Jurídica;
         Nome;
-        Telefone Fixo e Celular**;
-        CPF** ou CNPJ**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        CPF'**' ou CNPJ'**';
+        Email'**';
         Banco;
         Agencia;
         conta;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos;
     O sistema verifica se o cliente ja foi cadastrado a partir de seu CPF ou CNPJ;;
@@ -572,10 +572,10 @@ Fluxo de eventos principal
     O sistema lista os seguintes campos dos fornecedores encontrados:
 
         Nome;
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
 
 Fluxos secundários
@@ -589,16 +589,16 @@ Fluxo de eventos principal
     O usuário seleciona o cliente na listagem.
     O sistema lista os seguintes campos dos fornecedores encontrados:
 
-        Pessoa fisica ou Juridica;
+        Pessoa física ou Jurídica;
         Nome;
         CPF ou CNPJ
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
         Banco;
         Agencia;
         Conta
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
 Fluxos secundários
 
@@ -623,16 +623,16 @@ Fluxo de eventos principal
 
     O cliente informa os dados necessários para a edição do Fornecedor:
 
-        Pessoa fisica ou Juridica;
+        Pessoa física ou Jurídica;
         Nome;
         CPF ou CNPJ;
-        Telefone Fixo e Celular**;
-        Email**;
+        Telefone Fixo e Celular'**';
+        Email'**';
         Banco;
         Agência;
         Conta
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema verifica se o cliente já foi cadastrado a partir de seu telefone                                           celular.
@@ -663,18 +663,18 @@ Fluxo de eventos principal
 
         Nome;
         Local;
-        Hora Inicio e hora fim**;
-        Data inicio e data fim**;
+        Hora Inicio e hora fim'**';
+        Data inicio e data fim'**';
         Cliente;
         Fornecedor;
-        Categorias de produtos do fornecedor usadas**;
+        Categorias de produtos do fornecedor usadas'**';
         Coordenador;
         Promotores;
         Valor orçado;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
-* Ambos tem que ser preechidos
+'*' Ambos tem que ser preenchidos
 
     O sistema verifica se todos os campos foram preenchidos;
     O sistema exibe uma mensagem de sucesso para o usuário.
@@ -683,9 +683,9 @@ Fluxo de eventos principal
 
 Fluxos secundários
 
-    No passo 2, se algum dos campos obrigatorios não estiverem preenchidos, uma mensagem será exibida pedindo para que o usuário forneça o dado e o redireciona para o passo 1.
+    No passo 2, se algum dos campos obrigatórios não estiverem preenchidos, uma mensagem será exibida pedindo para que o usuário forneça o dado e o redireciona para o passo 1.
 
-==UC30 - Manter Campanha Promocional==
+==UC10 - Manter Campanha Promocional==
 
 Prioridade: Importante
 Descrição do requisito funcional: O sistema deve permitir listar, visualizar, excluir e editar de todas as campanhas promocionais agendadas, a partir de um filtro ou não.
@@ -705,7 +705,7 @@ Fluxo de eventos principal
 
         Nome;
         Cliente;
-        Local.
+        Local;
         Data inicio e fim;
 
 Fluxos secundários
@@ -723,7 +723,7 @@ Fluxo de eventos principal
         Nome;
         Local;
         Hora Inicio e hora fim;
-        Data inicio e data dim;
+        Data inicio e data fim;
         Dias da semana;
         Cliente;
         Fornecedor;
@@ -743,12 +743,12 @@ Fluxo de eventos principal
 
     O usuário seleciona a campanha na listagem e seleciona a opção de excluir.
     O sistema deve excluir a campanha.
-    O sistema gera uma mensagem informando “A campanha foi excluida com sucesso!”.
+    O sistema gera uma mensagem informando “A campanha foi excluída com sucesso!”.
 
 
 Fluxos secundários
 
-    Se o usuário selecionar uma camapnha que não esteja cadastrada, o sistema deve gerar uma mensagem “Nenhuma campanha encontrada!”.
+    Se o usuário selecionar uma camapanha que não esteja cadastrada, o sistema deve gerar uma mensagem “Nenhuma campanha encontrada!”.
 
 *Edição*
 
@@ -758,20 +758,20 @@ Fluxo de eventos principal
 
         Nome;
         Local;
-        Hora Inicio e hora fim**;
-        Data inicio e data fim*;
-        Dias da semana*;
+        Hora Inicio e hora fim'**';
+        Data inicio e data fim'*';
+        Dias da semana'*';
         Cliente;
         Fornecedor;
-        Categorias de produtos do fornecedor que serão usados**;
+        Categorias de produtos do fornecedor que serão usados'**';
         Coordenador;
         Promotores
         Valor orçado;
         Valor usado;
 
-**Campos não obrigatórios.
+'**'Campos não obrigatórios.
 
-* Ambos tem que ser preenchidos
+'*' Ambos tem que ser preenchidos
 
     O sistema verifica se todos os campos obrigatórios foram preenchidos.
     O sistema atualiza os dados da campanha no banco de dados.
@@ -801,7 +801,7 @@ Fluxo de eventos principal
         Hora
 
     O sistema salva a nova tarefa no banco de dados;
-    O sistema verifica se ja existe uma tarefa agendada para o mesmo horario;
+    O sistema verifica se já existe uma tarefa agendada para o mesmo horário;
     O sistema exibe uma mensagem de sucesso para o usuário.
 
 
@@ -825,4 +825,4 @@ Fluxo de eventos principal
 
 Fluxos secundários
 
-    Antes do passo 1 o sistema verifica se algum lembrete ja foi enviado naquele dia, se sim, ele não executa o passo.
+    Antes do passo 1 o sistema verifica se algum lembrete já foi enviado naquele dia, se sim, ele não executa o passo.
