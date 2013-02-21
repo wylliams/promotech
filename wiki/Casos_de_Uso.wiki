@@ -1,19 +1,10 @@
 || <a href="http://code.google.com/p/promotech">Home</a> |||| <a href="http://code.google.com/p/promotech/wiki/Equipe">Equipe</a> |||| <a href="http://code.google.com/p/promotech/wiki/Descricao_do_Sistema">Descrição do Sistema</a> |||| *Casos de Uso* ||
+
+
+<wiki:toc max_depth="2" />
+
 = Especificações dos Casos de Uso =
 O sistema Promo Tech irá permitir aos seus usuários a execução e processamento das seguintes operações:
-  *[Casos_de_Uso#UC01_-_Efetuar_Login]
-  *[Casos_de_Uso#UC02_-_Alterar_Senha]
-  *[Casos_de_Uso#UC03_-_Manter_Promotor] 
-  *[Casos_de_Uso#UC04_-_Manter_Coordenador]
-  *[Casos_de_Uso#UC05_-_Manter_produto]
-  *[Casos_de_Uso#UC06_-_Manter_Fornecedor]
-  *[Casos_de_Uso#UC07_-_Definir_faixa_de_valor] 
-  *[Casos_de_Uso#UC08_-_Manter_Cliente]
-  *[Casos_de_Uso#UC09_-_Agendar_Campanha_Promocional]
-  *[Casos_de_Uso#UC10_-_Manter_Campanha_Promocional]
-  *[Casos_de_Uso#UC11_-_Agendar compromisso]
-  *[Casos_de_Uso#UC12_-_Enviar_Lembrete_Por_Email_Das_Campanhas_Promocionais_E_Da_Agenda]
-
 
 
 ==UC01 - Efetuar Login==
@@ -301,7 +292,7 @@ Fluxos secundários
     No passo 3, se o coordenador já se encontra cadastrado, o sistema exibe uma mensagem “Numero de telefone celular cadastrado no –nome do Coordenador que possui esse telefone-“ e redireciona o usuário para o passo 1.
 
 
-==[UC05] - Manter Produto==
+==UC05 - Manter Produto==
 
 Prioridade: Essencial
 Descrição do requisito funcional: O sistema deve permitir que o usuário administrador possa incluir, listar, visualizar, excluir e editar novas categorias de produtos no sistema.
