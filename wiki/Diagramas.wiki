@@ -1,0 +1,9 @@
+
+Diagrama ER
+
+http://code.google.com/p/promotech/source/browse/trunk/documentos/diagrama_ER.jpg
+
+
+Diagrama de Caso de Uso
+
+http://code.google.com/p/promotech/source/browse/trunk/documentos/UseCase_Diagram0.png
