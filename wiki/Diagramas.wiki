@@ -1,9 +1,7 @@
-
 Diagrama ER
 
-http://code.google.com/p/promotech/source/browse/trunk/documentos/diagrama_ER.jpg
-
+http://1.bp.blogspot.com/-1BQpxluwDeU/USgI0JpyUXI/AAAAAAAAAf4/p4MHMR26dAk/s1600/diagrama+ER.jpg
 
 Diagrama de Caso de Uso
 
-http://code.google.com/p/promotech/source/browse/trunk/documentos/UseCase_Diagram0.png
+http://2.bp.blogspot.com/-x5R6Jp2SdZc/USgJBm35UiI/AAAAAAAAAgA/ZsFnP8zkJ7k/s1600/UseCase+Diagram0.png
