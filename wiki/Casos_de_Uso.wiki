@@ -760,7 +760,6 @@ Fluxo de eventos principal
         Local;
         Hora Inicio e hora fim'**';
         Data inicio e data fim'*';
-        Dias da semana'*';
         Cliente;
         Fornecedor;
         Categorias de produtos do fornecedor que serão usados'**';
