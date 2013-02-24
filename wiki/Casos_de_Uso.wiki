@@ -666,9 +666,9 @@ Fluxo de eventos principal
         Hora Inicio e hora fim'**';
         Data inicio e data fim'**';
         Cliente;
-        Fornecedor;
+        Fornecedores;
         Categorias de produtos do fornecedor usadas'**';
-        Coordenador;
+        Coordenadores;
         Promotores;
         Valor orçado;
 
@@ -724,11 +724,10 @@ Fluxo de eventos principal
         Local;
         Hora Inicio e hora fim;
         Data inicio e data fim;
-        Dias da semana;
         Cliente;
-        Fornecedor;
+        Fornecedores;
         Categorias de produtos do fornecedor que serão usados;
-        Coordenador;
+        Coordenadores;
         Promotores
         Valor orçado;
         Valor usado; 
@@ -763,7 +762,7 @@ Fluxo de eventos principal
         Cliente;
         Fornecedor;
         Categorias de produtos do fornecedor que serão usados'**';
-        Coordenador;
+        Coordenadores;
         Promotores
         Valor orçado;
         Valor usado;
