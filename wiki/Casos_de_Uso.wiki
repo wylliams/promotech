@@ -1,4 +1,4 @@
-|| <a href="http://code.google.com/p/promotech">Home</a> |||| <a href="http://code.google.com/p/promotech/wiki/Equipe">Equipe</a> |||| <a href="http://code.google.com/p/promotech/wiki/Descricao_do_Sistema">Descrição do Sistema</a> |||| *Casos de Uso* ||
+|| <a href="http://code.google.com/p/promotech">Home</a> |||| <a href="http://code.google.com/p/promotech/wiki/Equipe">Equipe</a> |||| <a href="http://code.google.com/p/promotech/wiki/Descricao_do_Sistema">Descrição do Sistema</a> |||| *Casos de Uso* ||||<a href="http://code.google.com/p/promotech/wiki/Diagramas">Diagramas</a>||||<a href="http://code.google.com/p/promotech/wiki/Links">Links</a>||
 
 
 <wiki:toc max_depth="2" />
