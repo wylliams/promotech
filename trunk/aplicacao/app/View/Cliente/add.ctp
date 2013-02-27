@@ -1,9 +1,9 @@
 <div class="cliente form">
 <?php echo $this->Form->create('Cliente'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Cliente'); ?></legend>
+		<legend><?php echo __('Adicionar Cliente'); ?></legend>
 	<?php
-		echo $this->Form->input('tipo');
+		echo $this->Form->input('tipo', array('options' => array('PJ' => 'Pessoa Jurídica', 'PF' => 'Pessoa Física')));
 		echo $this->Form->input('nome');
 		echo $this->Form->input('telefone_fixo');
 		echo $this->Form->input('telefone_celular');
@@ -15,12 +15,12 @@
 		echo $this->Form->input('conta');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Salvar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Cliente'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('Listar Clientes'), array('action' => 'index')); ?></li>
 	</ul>
 </div>

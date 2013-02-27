@@ -46,10 +46,38 @@
 			<?php echo $this->Html->link(__($campanha['Cliente']['nome']), array('controller' => 'Cliente', 'action' => 'view', $campanha['Cliente']['id'])); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Promotores'); ?></dt>
+		<?php 
+		$count = 0;
+		foreach($promotor as $promotor){
+			foreach($promotor as $chave => $valor){?>
+				<?php if($count != 0) {?>
+					</br>
+				<?php } $count++;?>
+				<dd>
+				<?php echo $this->Html->link(__($valor), array('controller' => 'promotor', 'action' => 'view', $chave)); ?>
+				&nbsp;
+				</dd>
+			<?php } ?>
+		<?php } ?>
+		<dt><?php echo __('Coordenadores'); ?></dt>
+		<?php 
+		$count = 0;
+		foreach($coordenador as $coordenador){ 
+			foreach($coordenador as $chave => $valor){?>
+				<?php if($count != 0) {?>
+					</br>
+				<?php } $count++;?>
+				<dd>
+				<?php echo $this->Html->link(__($valor), array('controller' => 'coordenador', 'action' => 'view', $chave)); ?>
+				&nbsp;
+				</dd>
+			<?php } ?>
+		<?php } ?>
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Editar Campanha'), array('action' => 'edit', $campanha['Campanha']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Deletar Campanha'), array('action' => 'delete', $campanha['Campanha']['id']), null, __('Are you sure you want to delete # %s?', $campanha['Campanha']['id'])); ?> </li>

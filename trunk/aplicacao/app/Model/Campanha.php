@@ -75,6 +75,19 @@ class Campanha extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+		'CampanhaCoordenador' => array(
+			'className' => 'CampanhaCoordenador',
+			'foreignKey' => 'campanha_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
 		)
 	);
 	

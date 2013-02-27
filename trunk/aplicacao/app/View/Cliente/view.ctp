@@ -59,11 +59,11 @@
 	</dl>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Edit Cliente'), array('action' => 'edit', $cliente['Cliente']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Cliente'), array('action' => 'delete', $cliente['Cliente']['id']), null, __('Are you sure you want to delete # %s?', $cliente['Cliente']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Cliente'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Cliente'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Editar Cliente'), array('action' => 'edit', $cliente['Cliente']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Deletar Cliente'), array('action' => 'delete', $cliente['Cliente']['id']), null, __('Are you sure you want to delete # %s?', $cliente['Cliente']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Clientes'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('Novo Cliente'), array('action' => 'add')); ?> </li>
 	</ul>
 </div>
