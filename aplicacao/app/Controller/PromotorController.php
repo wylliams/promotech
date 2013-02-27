@@ -22,7 +22,7 @@ class PromotorController extends AppController {
  */
 	public function index() {
 		$this->Promotor->recursive = 0;
-		$this->set('promotor', $this->paginate());
+		$this->set('promotor', $this->paginate('Promotor', array('deletado' => '0')));
 	}
 
 /**
@@ -34,7 +34,8 @@ class PromotorController extends AppController {
  */
 	public function view($id = null) {
 		$this->Promotor->id = $id;
-		if (!$this->Promotor->exists()) {
+		$promotor = $this->Promotor->read();
+		if (!$this->Promotor->exists() || $promotor['Promotor']['deletado'] == 1) {
 			throw new NotFoundException(__('Promotor inválido'));
 		}
 		$this->set('promotor', $this->Promotor->read(null, $id));
@@ -66,7 +67,8 @@ class PromotorController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Promotor->id = $id;
-		if (!$this->Promotor->exists()) {
+		$promotor = $this->Promotor->read();
+		if (!$this->Promotor->exists() || $promotor['Promotor']['deletado'] == 1) {
 			throw new NotFoundException(__('Promotor inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {

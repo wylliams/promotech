@@ -16,7 +16,7 @@
 		echo $this->Form->input('coordenador_id', array('multiple' => true, 'selected' => $campanhaCoordenador));
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('Salvar')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Ações'); ?></h3>

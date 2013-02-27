@@ -9,16 +9,16 @@
 		echo $this->Form->input('hora_fim', array('label' => 'Hora final', 'timeFormat' => '24'));
 		echo $this->Form->input('data_inicio', array('dateFormat' => 'DMY', 'label' => 'Data inicial'));
 		echo $this->Form->input('data_fim', array('dateFormat' => 'DMY', 'label' => 'Data final'));
-		echo $this->Form->input('valor_orcado');
+		echo $this->Form->input('valor_orcado', array('label' => 'Valor Orçado'));
 		echo $this->Form->input('cliente_id');
-		echo $this->Form->input('promotor_id', array('multiple' => true));
-		echo $this->Form->input('coordenador_id', array('multiple' => true));
+		echo $this->Form->input('promotor_id', array('multiple' => true, 'label' => 'Promotores'));
+		echo $this->Form->input('coordenador_id', array('multiple' => true, 'label' => 'Coordenadores'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Salvar')); ?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Acões'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 
 		<li><?php echo $this->Html->link(__('Listar Campanhas'), array('action' => 'index')); ?></li>

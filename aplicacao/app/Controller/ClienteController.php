@@ -34,7 +34,8 @@ class ClienteController extends AppController {
  */
 	public function view($id = null) {
 		$this->Cliente->id = $id;
-		if (!$this->Cliente->exists()) {
+		$cliente = $this->Cliente->read();
+		if (!$this->Cliente->exists() || $cliente['Cliente']['deletado'] == 1) {
 			throw new NotFoundException(__('Cliente Inválido'));
 		}
 		$this->set('cliente', $this->Cliente->read(null, $id));
@@ -66,7 +67,8 @@ class ClienteController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Cliente->id = $id;
-		if (!$this->Cliente->exists()) {
+		$cliente = $this->Cliente->read();
+		if (!$this->Cliente->exists() || $cliente['Cliente']['deletado'] == 1) {
 			throw new NotFoundException(__('Cliente inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {

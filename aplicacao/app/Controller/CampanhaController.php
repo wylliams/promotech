@@ -34,10 +34,40 @@ class CampanhaController extends AppController {
  */
 	public function view($id = null) {
 		$this->Campanha->id = $id;
-		if (!$this->Campanha->exists()) {
-			throw new NotFoundException(__('Invalid campanha'));
+		$campanha = $this->Campanha->read();
+		
+		$this->loadModel("Promotor");
+		$this->loadModel('Coordenador');
+		
+		if (!$this->Campanha->exists() || $campanha['Campanha']['deletado'] == 1) {
+			throw new NotFoundException(__('Campanha Inválida'));
 		}
-		$this->set('campanha', $this->Campanha->read(null, $id));
+		
+		$this->set('campanha', $campanha);
+		
+		//Buscamos as relações com promotores
+		$arrayCampanhaPromotor = $campanha['CampanhaPromotor'];
+		$arrayPromotor = array();
+		foreach($arrayCampanhaPromotor as $idCampanhaPromotor => $idPromotor){
+			//adicionamos ao array de promotores todos os promotores que estão no relacionamento
+			$arrayPromotor[] = $this->Promotor->find('list', array('conditions' => array('Promotor.id' => $idPromotor),
+													 'fields' => array('Promotor.id', 'Promotor.nome')));
+		
+		}
+		//carregamos o array de promotores na view
+		$this->set('promotor', $arrayPromotor);
+		
+		//buscamos as relações com coordenadores
+		$arrayCampanhaCoordenador= $campanha['CampanhaCoordenador'];
+		$arrayCoordenador = array();
+		foreach($arrayCampanhaCoordenador as $idCampanhaCoordenador => $idCoordenador){
+			//adicionamos ao array de coordenadores todos os coordenadores da relação
+			$arrayCoordenador[] = $this->Coordenador->find('list', array('conditions' => array('Coordenador.id' => $idCoordenador),
+													 'fields' => array('Coordenador.id', 'Coordenador.nome')));
+		
+		}
+		//carregamos o array de coordenadores na view
+		$this->set('coordenador', $arrayCoordenador);
 	}
 
 /**
@@ -100,6 +130,12 @@ class CampanhaController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->Campanha->id = $id;
+		$campanha = $this->Campanha->read();
+		
+		if (!$this->Campanha->exists() || $campanha['Campanha']['deletado'] == 1) {
+			throw new NotFoundException(__('Campanha Inválida'));
+		}
 		
 		//Carregamos o Model promotor para exibir a lista de promotores para ser selecionado na view		
 		$this->loadModel('Promotor');
@@ -111,25 +147,25 @@ class CampanhaController extends AppController {
 		$coordenador = $this->Coordenador->find('list', array('fields' => array('Coordenador.id','Coordenador.nome')));
 		$this->set('coordenador', $coordenador);
 		
-		//Carregamos o Model campanha promotor para o dizer quais os promotores da campanha selecionada
-		$this->loadModel('CampanhaPromotor');
-		$campanhaPromotor = $this->CampanhaPromotor->find('list', array('conditions' => array('campanha_id' => $id), 'fields' =>array('promotor_id')));
-		$this->set('campanhaPromotor', $campanhaPromotor);
-		
-		//Carregamos o Model campanha coordenador para o dizer quais os coordenadores da campanha selecionada
-		$this->loadModel('CampanhaCoordenador');
-		$campanhaCoordenador = $this->CampanhaCoordenador->find('list', array('conditions' => array('campanha_id' => $id), 'fields' =>array('coordenador_id')));
-		$this->set('campanhaCoordenador', $campanhaCoordenador);
-		
 		//Carregamos o Model cliente para exibir os cliente para serem selecionados
 		$this->loadModel('Cliente');
 		$cliente = $this->Cliente->find('list', array('fields' => array('Cliente.id', 'Cliente.nome')));
 		$this->set('cliente', $cliente);
 		
-		$this->Campanha->id = $id;
-		if (!$this->Campanha->exists()) {
-			throw new NotFoundException(__('Campanha Inválida'));
+		//Carregamos o array campanha promotor para dizer quais os promotores da campanha selecionada
+		$arrayCampanhaPromotor = array();
+		foreach($campanha['CampanhaPromotor'] as $campanhaPromotor){
+			$arrayCampanhaPromotor[$campanhaPromotor['id']] = $campanhaPromotor['promotor_id'];
+		}		
+		$this->set('campanhaPromotor', $arrayCampanhaPromotor);
+		
+		//Carregamos o array campanha coordenador para o dizer quais os coordenadores da campanha selecionada
+		$arrayCampanhaCoordenador = array();
+		foreach($campanha['CampanhaCoordenador'] as $campanhaCoordenador){
+			$arrayCampanhaCoordenador[$campanhaCoordenador['id']] = $campanhaCoordenador['coordenador_id'];
 		}
+		$this->set('campanhaCoordenador', $arrayCampanhaCoordenador);
+		
 		if ($this->request->is('post') || $this->request->is('put')) {
 			$this->loadModel("CampanhaPromotor");
 			$this->CampanhaPromotor->create();
@@ -137,9 +173,8 @@ class CampanhaController extends AppController {
 			$this->CampanhaCoordenador->create();
 			if ($this->Campanha->save($this->request->data)) {
 				//Deletamos as relações com campanha e promotor
-				$arrayCampanhaPromotor = $this->CampanhaPromotor->find('list', array('conditions' => array('campanha_id' => $id), 'fields' => array('id')));
-				foreach($arrayCampanhaPromotor as $idCampanhaPromotor){
-					$this->CampanhaPromotor->id = $idCampanhaPromotor;
+				foreach($campanha['CampanhaPromotor'] as $campanhaPromotor){
+					$this->CampanhaPromotor->id = $campanhaPromotor['id'];
 					$this->CampanhaPromotor->delete();
 				}
 				//Varremos o array para pegar os ids dos promotores selecionados
@@ -152,9 +187,8 @@ class CampanhaController extends AppController {
 				}
 				
 				//Deletamos as relações com campanha e coordenador
-				$arrayCampanhaCoordenador = $this->CampanhaCoordenador->find('list', array('conditions' => array('campanha_id' => $id), 'fields' => array('id')));
-				foreach($arrayCampanhaCoordenador as $idCampanhaCoordenador){
-					$this->CampanhaCoordenador->id = $idCampanhaCoordenador;
+				foreach($campanha['CampanhaCoordenador'] as $campanhaCoordenador){
+					$this->CampanhaCoordenador->id = $campanhaCoordenador['id'];
 					$this->CampanhaCoordenador->delete();
 				}
 				//Varremos o array para pegar os ids dos promotores selecionados

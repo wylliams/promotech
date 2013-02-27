@@ -46,7 +46,7 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Acões'); ?></h3>
+	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Nova Campanha'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('Listar Promotores'), array('controller' => 'Promotor', 'action' => 'index')); ?> </li>
