@@ -38,3 +38,72 @@ public function testEmptyData() {
    $this->assertTrue(in_array('conta', $error_fields);
 
 }
+public $validate = Array(
+   'nome' => Array(
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado um nome para o cliente',
+         'required' => true
+      )
+   ),
+   'telefone_fixo' => Array(
+      'valid' => Array(
+         'rule' => array('comparison', '>', 0),
+         'message' => 'O telefone não pode ser 000000000'
+      ),
+      'format' => Array(
+         'rule' => array('numeric'),
+         'message' => 'O telefone deve ter um valor numérico válido'
+      ),
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado um telefone fixo para o cliente',
+         'required' => true
+      )
+   ),
+      'email' => Array(
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado um email para o cliente',
+         'required' => true
+      )
+   ),
+      'banco' => Array(
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado um banco para o cliente',
+         'required' => true
+      )
+   ),
+	  'agencia' => Array(
+      'valid' => Array(
+         'rule' => array('comparison', '>', 0),
+         'message' => 'A agencia não pode ser 000000000'
+      ),
+      'format' => Array(
+         'rule' => array('numeric'),
+         'message' => 'A agencia deve ter um valor numérico válido'
+      ),
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado uma agencia para o cliente',
+         'required' => true
+		)	
+	),
+      'conta' => Array(
+      'valid' => Array(
+         'rule' => array('comparison', '>', 0),
+         'message' => 'A conta não pode ser 000000000'
+      ),
+      'format' => Array(
+         'rule' => array('numeric'),
+         'message' => 'A conta deve ter um valor numérico válido'
+      ),
+      'required' => Array(
+         'rule' => '/\S/',
+         'message' => 'Deve ser especificado uma conta para o cliente',
+         'required' => true
+		)		
+	)
+
+);
