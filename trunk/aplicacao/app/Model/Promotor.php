@@ -145,3 +145,15 @@ class Promotor extends AppModel {
 	);
 
 }
+class PromotorTestCase {
+  function testpromotorOk() {
+    $tmpData = array(
+      'User' => array(
+         'password' => sha1(uniqid('', true)) //dummy pass
+    );
+
+    $result = $this->User->testpromotorOk($tmpData);
+
+    $this->assertTrue($result);
+  }
+}
