@@ -13,9 +13,9 @@
 	foreach ($coordenador as $coordenador): ?>
 	<tr>
 		<td><?php echo h($coordenador['Coordenador']['id']); ?>&nbsp;</td>
-		<td><?php echo h($coordenador['Coordenador']['nome']); ?>&nbsp;</td>
-		<td><?php echo h($coordenador['Coordenador']['telefone_celular']); ?>&nbsp;</td>
-		<td><?php echo h($coordenador['Coordenador']['email']); ?>&nbsp;</td>
+		<td><?php echo h($coordenador['Pessoa']['nome']); ?>&nbsp;</td>
+		<td><?php echo h($coordenador['Pessoa']['telefone_celular']); ?>&nbsp;</td>
+		<td><?php echo h($coordenador['Pessoa']['email']); ?>&nbsp;</td>
 		<td><?php echo h($coordenador['Coordenador']['anexo_curriculum']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $coordenador['Coordenador']['id'])); ?>

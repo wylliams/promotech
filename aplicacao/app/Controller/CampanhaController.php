@@ -47,13 +47,19 @@ class CampanhaController extends AppController {
 		
 		//Buscamos as relações com promotores
 		$arrayCampanhaPromotor = $campanha['CampanhaPromotor'];
+		
 		$arrayPromotor = array();
 		foreach($arrayCampanhaPromotor as $idCampanhaPromotor => $idPromotor){
-			//adicionamos ao array de promotores todos os promotores que estão no relacionamento
-			$arrayPromotor[] = $this->Promotor->find('list', array('conditions' => array('Promotor.id' => $idPromotor),
-													 'fields' => array('Promotor.id', 'Promotor.nome')));
-		
+			$promotor = $this->Promotor->find('all', array('conditions' => array('Promotor.id' => $idPromotor),
+															 'fields' => array('Promotor.id', 'Pessoa.nome')));
+			$find = array();
+			foreach($promotor as $promotor){
+				$find[$promotor['Promotor']['id']] = $promotor['Pessoa']['nome'];
+			}
+			//adicionamos ao array de promotores todos os promotores que estÃ£o no relacionamento
+			$arrayPromotor[] = $find;
 		}
+		
 		//carregamos o array de promotores na view
 		$this->set('promotor', $arrayPromotor);
 		
@@ -61,10 +67,14 @@ class CampanhaController extends AppController {
 		$arrayCampanhaCoordenador= $campanha['CampanhaCoordenador'];
 		$arrayCoordenador = array();
 		foreach($arrayCampanhaCoordenador as $idCampanhaCoordenador => $idCoordenador){
-			//adicionamos ao array de coordenadores todos os coordenadores da relação
-			$arrayCoordenador[] = $this->Coordenador->find('list', array('conditions' => array('Coordenador.id' => $idCoordenador),
-													 'fields' => array('Coordenador.id', 'Coordenador.nome')));
-		
+			$coordenador = $this->Coordenador->find('all', array('conditions' => array('Coordenador.id' => $idCoordenador),
+																	'fields' =>array('Coordenador.id', 'Pessoa.nome')));
+			$find2 = array();
+			foreach($coordenador as $coordenador){
+				$find2[$coordenador['Coordenador']['id']] = $coordenador['Pessoa']['nome'];
+			}
+			//adicionamos ao array de coordenadores todos os coordenadores da relação			
+			$arrayCoordenador[] = $find2;
 		}
 		//carregamos o array de coordenadores na view
 		$this->set('coordenador', $arrayCoordenador);
@@ -78,13 +88,21 @@ class CampanhaController extends AppController {
 	public function add() {
 		//Carregamos o Model promotor para exibir a lista de promotores para ser selecionado na view		
 		$this->loadModel('Promotor');
-		$promotor = $this->Promotor->find('list', array('conditions' => array('Promotor.deletado' => '0'),'fields' => array('Promotor.id','Promotor.nome')));
-		$this->set('promotor', $promotor);
+		$promotor = $this->Promotor->find('all', array('conditions' => array('Promotor.deletado' => '0'),'fields' => array('Promotor.id','Pessoa.nome')));
+		$find = array();
+		foreach($promotor as $promotor){
+			$find[$promotor['Promotor']['id']] = $promotor['Pessoa']['nome'];
+		}
+		$this->set('promotor', $find);
 		
 		//Carregamos o Model coordenador para exibir a lista de coordenadores para ser selecionado na view		
 		$this->loadModel('Coordenador');
-		$coordenador = $this->Coordenador->find('list', array('conditions' => array('Coordenador.deletado' => '0'),'fields' => array('Coordenador.id','Coordenador.nome')));
-		$this->set('coordenador', $coordenador);
+		$coordenador = $this->Coordenador->find('all', array('conditions' => array('Coordenador.deletado' => '0'),'fields' => array('Coordenador.id','Pessoa.nome')));
+		$find2 = array();
+		foreach($coordenador as $coordenador){
+			$find2[$coordenador['Coordenador']['id']] = $coordenador['Pessoa']['nome'];
+		}
+		$this->set('coordenador', $find2);
 		
 		//Carregamos o Model cliente para exibir os cliente para serem selecionados
 		$this->loadModel('Cliente');
@@ -139,13 +157,21 @@ class CampanhaController extends AppController {
 		
 		//Carregamos o Model promotor para exibir a lista de promotores para ser selecionado na view		
 		$this->loadModel('Promotor');
-		$promotor = $this->Promotor->find('list', array('fields' => array('Promotor.id','Promotor.nome')));
-		$this->set('promotor', $promotor);
+		$promotor = $this->Promotor->find('all', array('conditions' => array('Promotor.deletado' => '0'),'fields' => array('Promotor.id','Pessoa.nome')));
+		$find = array();
+		foreach($promotor as $promotor){
+			$find[$promotor['Promotor']['id']] = $promotor['Pessoa']['nome'];
+		}
+		$this->set('promotor', $find);
 		
 		//Carregamos o Model coordenador para exibir a lista de coordenadores para ser selecionado na view		
 		$this->loadModel('Coordenador');
-		$coordenador = $this->Coordenador->find('list', array('fields' => array('Coordenador.id','Coordenador.nome')));
-		$this->set('coordenador', $coordenador);
+		$coordenador = $this->Coordenador->find('all', array('conditions' => array('Coordenador.deletado' => '0'),'fields' => array('Coordenador.id','Pessoa.nome')));
+		$find2 = array();
+		foreach($coordenador as $coordenador){
+			$find2[$coordenador['Coordenador']['id']] = $coordenador['Pessoa']['nome'];
+		}
+		$this->set('coordenador', $find2);
 		
 		//Carregamos o Model cliente para exibir os cliente para serem selecionados
 		$this->loadModel('Cliente');

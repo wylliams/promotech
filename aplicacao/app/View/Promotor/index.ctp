@@ -14,11 +14,11 @@
 	foreach ($promotor as $promotor): ?>
 	<tr>
 		<td><?php echo h($promotor['Promotor']['id']); ?>&nbsp;</td>
-		<td><?php echo h($promotor['Promotor']['nome']); ?>&nbsp;</td>		
+		<td><?php echo h($promotor['Pessoa']['nome']); ?>&nbsp;</td>		
 		<td><?php echo h($promotor['Promotor']['categoria']); ?>&nbsp;</td>
-		<td><?php echo h($promotor['Promotor']['telefone_celular']); ?>&nbsp;</td>
-		<td><?php echo h($promotor['Promotor']['email']); ?>&nbsp;</td>
-		<td><?php echo h($promotor['Promotor']['foto']); ?>&nbsp;</td>
+		<td><?php echo h($promotor['Pessoa']['telefone_celular']); ?>&nbsp;</td>
+		<td><?php echo h($promotor['Pessoa']['email']); ?>&nbsp;</td>
+		<td><?php echo h($promotor['Pessoa']['foto']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $promotor['Promotor']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $promotor['Promotor']['id'])); ?>
