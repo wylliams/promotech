@@ -3,6 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Coordenador Model
  *
+ * @property Pessoa $Pessoa
  * @property CampanhaCoordenador $CampanhaCoordenador
  */
 class Coordenador extends AppModel {
@@ -13,29 +14,9 @@ class Coordenador extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'nome' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'telefone_celular' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
+		'pessoa_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -46,6 +27,21 @@ class Coordenador extends AppModel {
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Pessoa' => array(
+			'className' => 'Pessoa',
+			'foreignKey' => 'pessoa_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
 /**
  * hasMany associations

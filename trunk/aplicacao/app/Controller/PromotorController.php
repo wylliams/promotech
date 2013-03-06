@@ -49,7 +49,7 @@ class PromotorController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Promotor->create();
-			if ($this->Promotor->save($this->request->data)) {
+			if ($this->Promotor->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('O promotor foi salvo com sucesso'));
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -72,7 +72,7 @@ class PromotorController extends AppController {
 			throw new NotFoundException(__('Promotor inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Promotor->save($this->request->data)) {
+			if ($this->Promotor->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('O promotor foi salvo com sucesso.'));
 				$this->redirect(array('action' => 'index'));
 			} else {

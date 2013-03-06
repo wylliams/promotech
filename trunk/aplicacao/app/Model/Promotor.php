@@ -3,6 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Promotor Model
  *
+ * @property Pessoa $Pessoa
  * @property CampanhaPromotor $CampanhaPromotor
  */
 class Promotor extends AppModel {
@@ -13,38 +14,10 @@ class Promotor extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'nome' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'foto' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'categoria' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				'message' => 'Apenas letras e numeros',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -54,7 +27,7 @@ class Promotor extends AppModel {
 		'altura' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -62,17 +35,9 @@ class Promotor extends AppModel {
 			),
 		),
 		'manequim' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Apenas númenros',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -80,9 +45,17 @@ class Promotor extends AppModel {
 			),
 		),
 		'peso' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -90,29 +63,27 @@ class Promotor extends AppModel {
 			),
 		),
 		'numero_calcado' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 			'notempty' => array(
 				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'telefone_celular' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
-				'message' => 'Campo obrigatório',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				'message' => 'Digite um email válido',
+		'pessoa_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -122,6 +93,21 @@ class Promotor extends AppModel {
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Pessoa' => array(
+			'className' => 'Pessoa',
+			'foreignKey' => 'pessoa_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
 /**
  * hasMany associations

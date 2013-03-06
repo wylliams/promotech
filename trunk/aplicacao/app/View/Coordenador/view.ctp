@@ -8,37 +8,37 @@
 		</dd>
 		<dt><?php echo __('Nome'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['nome']); ?>
+			<?php echo h($coordenador['Pessoa']['nome']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Cpf'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['cpf']); ?>
+			<?php echo h($coordenador['Pessoa']['cpf']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Rg'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['rg']); ?>
+			<?php echo h($coordenador['Pessoa']['rg']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['foto']); ?>
+			<?php echo h($coordenador['Pessoa']['foto']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Telefone Fixo'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['telefone_fixo']); ?>
+			<?php echo h($coordenador['Pessoa']['telefone_fixo']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Telefone Celular'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['telefone_celular']); ?>
+			<?php echo h($coordenador['Pessoa']['telefone_celular']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Email'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Coordenador']['email']); ?>
+			<?php echo h($coordenador['Pessoa']['email']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Anexo Curriculum'); ?></dt>

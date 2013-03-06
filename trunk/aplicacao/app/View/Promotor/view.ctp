@@ -8,22 +8,22 @@
 		</dd>
 		<dt><?php echo __('Nome'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['nome']); ?>
+			<?php echo h($promotor['Pessoa']['nome']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Cpf'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['cpf']); ?>
+			<?php echo h($promotor['Pessoa']['cpf']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Rg'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['rg']); ?>
+			<?php echo h($promotor['Pessoa']['rg']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['foto']); ?>
+			<?php echo h($promotor['Pessoa']['foto']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Categoria'); ?></dt>
@@ -53,17 +53,17 @@
 		</dd>
 		<dt><?php echo __('Telefone Fixo'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['telefone_fixo']); ?>
+			<?php echo h($promotor['Pessoa']['telefone_fixo']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Telefone Celular'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['telefone_celular']); ?>
+			<?php echo h($promotor['Pessoa']['telefone_celular']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Email'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Promotor']['email']); ?>
+			<?php echo h($promotor['Pessoa']['email']); ?>
 			&nbsp;
 		</dd>
 	</dl>

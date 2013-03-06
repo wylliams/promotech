@@ -48,7 +48,7 @@ class CoordenadorController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Coordenador->create();
-			if ($this->Coordenador->save($this->request->data)) {
+			if ($this->Coordenador->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The coordenador has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -70,7 +70,7 @@ class CoordenadorController extends AppController {
 			throw new NotFoundException(__('Invalid coordenador'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Coordenador->save($this->request->data)) {
+			if ($this->Coordenador->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The coordenador has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {

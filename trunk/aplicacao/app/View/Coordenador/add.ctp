@@ -3,13 +3,13 @@
 	<fieldset>
 		<legend><?php echo __('Add Coordenador'); ?></legend>
 	<?php
-		echo $this->Form->input('nome');
-		echo $this->Form->input('cpf');
-		echo $this->Form->input('rg');
-		echo $this->Form->input('foto');
-		echo $this->Form->input('telefone_fixo');
-		echo $this->Form->input('telefone_celular');
-		echo $this->Form->input('email');
+		echo $this->Form->input('Pessoa.nome');
+		echo $this->Form->input('Pessoa.cpf');
+		echo $this->Form->input('Pessoa.rg');
+		echo $this->Form->input('Pessoa.foto');
+		echo $this->Form->input('Pessoa.telefone_fixo');
+		echo $this->Form->input('Pessoa.telefone_celular');
+		echo $this->Form->input('Pessoa.email');
 		echo $this->Form->input('anexo_curriculum');
 	?>
 	</fieldset>
