@@ -14,11 +14,12 @@ class CoordenadorTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.coordenador',
-		'app.campanha_coordenador',
+		'app.pessoa',
+		'app.promotor',
+		'app.campanha_promotor',
 		'app.campanha',
 		'app.cliente',
-		'app.campanha_promotor',
-		'app.promotor'
+		'app.campanha_coordenador'
 	);
 
 /**

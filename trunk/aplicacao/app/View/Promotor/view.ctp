@@ -23,8 +23,7 @@
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<?php echo h($promotor['Pessoa']['foto']); ?>
-			&nbsp;
+			<img src="http://localhost/promotech/uploads/<?php echo $promotor['Pessoa']['foto'];?>" alt="<?php $promotor['Pessoa']['nome'];?>" height="150" width="150"/>
 		</dd>
 		<dt><?php echo __('Categoria'); ?></dt>
 		<dd>
@@ -72,8 +71,8 @@
 	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Editar Promotor'), array('action' => 'edit', $promotor['Promotor']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Deletar Promotor'), array('action' => 'delete', $promotor['Promotor']['id']), null, __('Are you sure you want to delete # %s?', $promotor['Promotor']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('Listar Promotor'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Deletar Promotor'), array('action' => 'delete', $promotor['Promotor']['id']), null, __("Você tem certeza que quer deletar ".$promotor['Pessoa']['nome']."?", $promotor['Promotor']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Listar Promotores'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('Novo Promotor'), array('action' => 'add')); ?> </li>
 	</ul>
 </div>

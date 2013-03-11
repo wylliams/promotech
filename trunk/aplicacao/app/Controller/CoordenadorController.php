@@ -48,6 +48,7 @@ class CoordenadorController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Coordenador->create();
+			$this->request->data['Coordenador']['id'] = $this->request->data['Pessoa']['id'];
 			if ($this->Coordenador->saveAll($this->request->data)) {
 				$this->Session->setFlash(__('The coordenador has been saved'));
 				$this->redirect(array('action' => 'index'));

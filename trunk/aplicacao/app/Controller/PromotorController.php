@@ -48,13 +48,31 @@ class PromotorController extends AppController {
  */
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Promotor->create();
-			if ($this->Promotor->saveAll($this->request->data)) {
-				$this->Session->setFlash(__('O promotor foi salvo com sucesso'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('O promotor não pode ser salvo, por favor, tente novamente.'));
+			$this->Promotor->create();			
+			
+			//Validando o upload do arquivo de foto
+			$foto = $this->request->data['Pessoa']['foto'];
+			
+			if($foto['type'] == 'image/jpg' || $foto['type'] == 'image/jpeg' || $foto['type'] == 'image/png'){
+				if($foto['size'] < 3000000){
+					move_uploaded_file($foto['tmp_name'], "C:\\wamp\\www\\promotech\\uploads\\".$foto['name']);
+					//var_dump($this->request->data);
+					//die;
+					$this->request->data['Pessoa']['foto'] = $foto['name'];
+					$this->request->data['Promotor']['id'] = $this->request->data['Pessoa']['id'];
+					if ($this->Promotor->saveAll($this->request->data)) {
+						$this->Session->setFlash(__('O promotor foi salvo com sucesso'));
+						$this->redirect(array('action' => 'index'));
+					} else {
+						$this->Session->setFlash(__('O promotor não pode ser salvo, por favor, tente novamente.'));
+					}
+				}else{
+					$this->Session->setFlash(__('O arquivo deve ter no máximo 3MB.'));
+				}
+			}else{
+				$this->Session->setFlash(__('O arquivo de foto deve esta no formado JPG ou PNG.'));
 			}
+			
 		}
 	}
 
@@ -68,16 +86,46 @@ class PromotorController extends AppController {
 	public function edit($id = null) {
 		$this->Promotor->id = $id;
 		$promotor = $this->Promotor->read();
+		$fotoAntes = $this->Promotor->data['Pessoa']['foto'];
+		
 		if (!$this->Promotor->exists() || $promotor['Promotor']['deletado'] == 1) {
 			throw new NotFoundException(__('Promotor inválido'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Promotor->saveAll($this->request->data)) {
-				$this->Session->setFlash(__('O promotor foi salvo com sucesso.'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('O promotor não pode ser salvo, por favor, tente novamente.'));
+			
+			//Validando o upload do arquivo de foto
+			$foto = $this->request->data['Pessoa']['foto'];
+			
+			if($foto['name'] == ''){
+				$this->request->data['Pessoa']['foto'] = $fotoAntes;
+				if ($this->Promotor->saveAll($this->request->data)) {
+					$this->Session->setFlash(__('O promotor foi salvo com sucesso'));
+					$this->redirect(array('action' => 'index'));
+				} else {
+					$this->Session->setFlash(__('O promotor não pode ser salvo, por favor, tente novamente.'));
+				}
+			}else{
+				if($foto['type'] == 'image/jpg' || $foto['type'] == 'image/jpeg' || $foto['type'] == 'image/png'){
+					if($foto['size'] < 3000000){
+						move_uploaded_file($foto['tmp_name'], "C:\\wamp\\www\\promotech\\uploads\\".$foto['name']);
+						//var_dump($this->request->data);
+						//die;
+						$this->request->data['Pessoa']['foto'] = $foto['name'];
+						$this->request->data['Promotor']['id'] = $this->request->data['Pessoa']['id'];
+						if ($this->Promotor->saveAll($this->request->data)) {
+							$this->Session->setFlash(__('O promotor foi salvo com sucesso'));
+							$this->redirect(array('action' => 'index'));
+						} else {
+							$this->Session->setFlash(__('O promotor não pode ser salvo, por favor, tente novamente.'));
+						}
+					}else{
+						$this->Session->setFlash(__('O arquivo deve ter no máximo 3MB.'));
+					}
+				}else{
+					$this->Session->setFlash(__('O arquivo de foto deve esta no formado JPG ou PNG.'));
+				}
 			}
+			
 		} else {
 			$this->request->data = $this->Promotor->read(null, $id);
 		}

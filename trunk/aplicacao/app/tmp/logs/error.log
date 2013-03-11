@@ -853,3 +853,91 @@
 #9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
 #10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2013-03-08 13:09:10 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('campanha')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('Campanha', Array, Array)
+#8 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(25): Controller->paginate('Campanha', Array)
+#9 [internal function]: CampanhaController->index()
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-03-09 14:35:26 Error: [NotFoundException] Campanha Inválida
+#0 [internal function]: CampanhaController->view('2')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-09 14:36:37 Error: [NotFoundException] Campanha inválida
+#0 [internal function]: CampanhaController->delete('2')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-09 14:53:52 Error: [MissingControllerException] Controller class TmpController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 15:11:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(Pessoa), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2208): Model->save(Array, Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2031): Model->saveAssociated(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PromotorController.php(69): Model->saveAll(Array)
+#7 [internal function]: PromotorController->add()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PromotorController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PromotorController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-09 15:26:07 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 15:26:07 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 15:26:07 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:28 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:28 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:28 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:56 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:57 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-09 16:03:57 Error: [MissingControllerException] Controller class LocalhostController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-11 12:04:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getFoto' at line 1
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('getFoto', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('getFoto', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(611): DboSource->fetchAll('getFoto', Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(784): DboSource->query('getFoto', Array, Object(Promotor))
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\PromotorController.php(89): Model->__call('getFoto', Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PromotorController.php(89): Promotor->getFoto()
+#7 [internal function]: PromotorController->edit('1')
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PromotorController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PromotorController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
