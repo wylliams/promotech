@@ -1,12 +1,12 @@
 <div class="promotor form">
-<?php echo $this->Form->create('Promotor'); ?>
+<?php echo $this->Form->create('Promotor', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Add Promotor'); ?></legend>
 	<?php
 		echo $this->Form->input('Pessoa.nome');
 		echo $this->Form->input('Pessoa.cpf');
 		echo $this->Form->input('Pessoa.rg');
-		echo $this->Form->input('Pessoa.foto');
+		echo $this->Form->input('Pessoa.foto', array('type' => 'file'));
 		echo $this->Form->input('categoria');
 		echo $this->Form->input('altura');
 		echo $this->Form->input('manequim');

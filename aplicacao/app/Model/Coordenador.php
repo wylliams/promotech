@@ -36,7 +36,7 @@ class Coordenador extends AppModel {
 	public $belongsTo = array(
 		'Pessoa' => array(
 			'className' => 'Pessoa',
-			'foreignKey' => 'pessoa_id',
+			'foreignKey' => 'id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

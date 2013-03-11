@@ -1,11 +1,11 @@
 <?php
-App::uses('Promotor', 'Model');
+App::uses('CampanhaPromotor', 'Model');
 
 /**
- * Promotor Test Case
+ * CampanhaPromotor Test Case
  *
  */
-class PromotorTest extends CakeTestCase {
+class CampanhaPromotorTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,13 +13,13 @@ class PromotorTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.promotor',
-		'app.pessoa',
-		'app.coordenador',
-		'app.campanha_coordenador',
+		'app.campanha_promotor',
 		'app.campanha',
 		'app.cliente',
-		'app.campanha_promotor'
+		'app.campanha_coordenador',
+		'app.coordenador',
+		'app.pessoa',
+		'app.promotor'
 	);
 
 /**
@@ -29,7 +29,7 @@ class PromotorTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Promotor = ClassRegistry::init('Promotor');
+		$this->CampanhaPromotor = ClassRegistry::init('CampanhaPromotor');
 	}
 
 /**
@@ -38,7 +38,7 @@ class PromotorTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Promotor);
+		unset($this->CampanhaPromotor);
 
 		parent::tearDown();
 	}
