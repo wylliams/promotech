@@ -1,11 +1,11 @@
 <?php
-App::uses('Fornecedor', 'Model');
+App::uses('AppModel', 'Model');
 
 /**
- * Fornecedor Test Case
+ * AppModel Test Case
  *
  */
-class FornecedorTest extends CakeTestCase {
+class AppModelTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,8 +13,7 @@ class FornecedorTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.fornecedor',
-		'app.campanha_fornecedor'
+		'app.app_model'
 	);
 
 /**
@@ -24,7 +23,7 @@ class FornecedorTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Fornecedor = ClassRegistry::init('Fornecedor');
+		$this->AppModel = ClassRegistry::init('AppModel');
 	}
 
 /**
@@ -33,7 +32,7 @@ class FornecedorTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Fornecedor);
+		unset($this->AppModel);
 
 		parent::tearDown();
 	}
