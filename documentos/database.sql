@@ -3,14 +3,14 @@
 -- Server version:               5.5.24-log - MySQL Community Server (GPL)
 -- Server OS:                    Win32
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-03-11 09:21:24
+-- Date/time:                    2013-03-16 18:10:37
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table promotech.campanha
+-- Dumping structure for table test_promotech.campanha
 DROP TABLE IF EXISTS `campanha`;
 CREATE TABLE IF NOT EXISTS `campanha` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -29,13 +29,10 @@ CREATE TABLE IF NOT EXISTS `campanha` (
   CONSTRAINT `fk_campanha_cliente1` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.campanha: ~0 rows (approximately)
-DELETE FROM `campanha`;
-/*!40000 ALTER TABLE `campanha` DISABLE KEYS */;
-/*!40000 ALTER TABLE `campanha` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.campanha_coordenador
+-- Dumping structure for table test_promotech.campanha_coordenador
 DROP TABLE IF EXISTS `campanha_coordenador`;
 CREATE TABLE IF NOT EXISTS `campanha_coordenador` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,13 +45,10 @@ CREATE TABLE IF NOT EXISTS `campanha_coordenador` (
   CONSTRAINT `fk_campanha_has_coordenador_coordenador1` FOREIGN KEY (`coordenador_id`) REFERENCES `coordenador` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.campanha_coordenador: ~0 rows (approximately)
-DELETE FROM `campanha_coordenador`;
-/*!40000 ALTER TABLE `campanha_coordenador` DISABLE KEYS */;
-/*!40000 ALTER TABLE `campanha_coordenador` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.campanha_fornecedor
+-- Dumping structure for table test_promotech.campanha_fornecedor
 DROP TABLE IF EXISTS `campanha_fornecedor`;
 CREATE TABLE IF NOT EXISTS `campanha_fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -67,13 +61,10 @@ CREATE TABLE IF NOT EXISTS `campanha_fornecedor` (
   CONSTRAINT `fk_campanha_fornecedor_fornecedor1` FOREIGN KEY (`fornecedor_id`) REFERENCES `fornecedor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.campanha_fornecedor: ~0 rows (approximately)
-DELETE FROM `campanha_fornecedor`;
-/*!40000 ALTER TABLE `campanha_fornecedor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `campanha_fornecedor` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.campanha_fornecedor_categoria_produto
+-- Dumping structure for table test_promotech.campanha_fornecedor_categoria_produto
 DROP TABLE IF EXISTS `campanha_fornecedor_categoria_produto`;
 CREATE TABLE IF NOT EXISTS `campanha_fornecedor_categoria_produto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -87,13 +78,10 @@ CREATE TABLE IF NOT EXISTS `campanha_fornecedor_categoria_produto` (
   CONSTRAINT `fk_categoria_produto_campanha_categoria_produto1` FOREIGN KEY (`categoria_produto_id`) REFERENCES `categoria_produto` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.campanha_fornecedor_categoria_produto: ~0 rows (approximately)
-DELETE FROM `campanha_fornecedor_categoria_produto`;
-/*!40000 ALTER TABLE `campanha_fornecedor_categoria_produto` DISABLE KEYS */;
-/*!40000 ALTER TABLE `campanha_fornecedor_categoria_produto` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.campanha_promotor
+-- Dumping structure for table test_promotech.campanha_promotor
 DROP TABLE IF EXISTS `campanha_promotor`;
 CREATE TABLE IF NOT EXISTS `campanha_promotor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -106,13 +94,10 @@ CREATE TABLE IF NOT EXISTS `campanha_promotor` (
   CONSTRAINT `fk_campanha_has_promotor_promotor1` FOREIGN KEY (`promotor_id`) REFERENCES `promotor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.campanha_promotor: ~0 rows (approximately)
-DELETE FROM `campanha_promotor`;
-/*!40000 ALTER TABLE `campanha_promotor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `campanha_promotor` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.categoria_produto
+-- Dumping structure for table test_promotech.categoria_produto
 DROP TABLE IF EXISTS `categoria_produto`;
 CREATE TABLE IF NOT EXISTS `categoria_produto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -121,13 +106,10 @@ CREATE TABLE IF NOT EXISTS `categoria_produto` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.categoria_produto: ~0 rows (approximately)
-DELETE FROM `categoria_produto`;
-/*!40000 ALTER TABLE `categoria_produto` DISABLE KEYS */;
-/*!40000 ALTER TABLE `categoria_produto` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.categoria_produto_fornecedor
+-- Dumping structure for table test_promotech.categoria_produto_fornecedor
 DROP TABLE IF EXISTS `categoria_produto_fornecedor`;
 CREATE TABLE IF NOT EXISTS `categoria_produto_fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -140,13 +122,10 @@ CREATE TABLE IF NOT EXISTS `categoria_produto_fornecedor` (
   CONSTRAINT `fk_categoria_produto_fornecedor_fornecedor1` FOREIGN KEY (`fornecedor_id`) REFERENCES `fornecedor` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.categoria_produto_fornecedor: ~0 rows (approximately)
-DELETE FROM `categoria_produto_fornecedor`;
-/*!40000 ALTER TABLE `categoria_produto_fornecedor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `categoria_produto_fornecedor` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.cliente
+-- Dumping structure for table test_promotech.cliente
 DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE IF NOT EXISTS `cliente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -164,13 +143,10 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.cliente: ~0 rows (approximately)
-DELETE FROM `cliente`;
-/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.compromisso
+-- Dumping structure for table test_promotech.compromisso
 DROP TABLE IF EXISTS `compromisso`;
 CREATE TABLE IF NOT EXISTS `compromisso` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -184,13 +160,10 @@ CREATE TABLE IF NOT EXISTS `compromisso` (
   CONSTRAINT `fk_compromisso_usuario1` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.compromisso: ~0 rows (approximately)
-DELETE FROM `compromisso`;
-/*!40000 ALTER TABLE `compromisso` DISABLE KEYS */;
-/*!40000 ALTER TABLE `compromisso` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.coordenador
+-- Dumping structure for table test_promotech.coordenador
 DROP TABLE IF EXISTS `coordenador`;
 CREATE TABLE IF NOT EXISTS `coordenador` (
   `id` int(11) NOT NULL,
@@ -202,15 +175,10 @@ CREATE TABLE IF NOT EXISTS `coordenador` (
   CONSTRAINT `fk_coordenador_Pessoa1` FOREIGN KEY (`id`) REFERENCES `pessoa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.coordenador: ~1 rows (approximately)
-DELETE FROM `coordenador`;
-/*!40000 ALTER TABLE `coordenador` DISABLE KEYS */;
-INSERT INTO `coordenador` (`id`, `anexo_curriculum`, `deletado`) VALUES
-	(2, '', 0);
-/*!40000 ALTER TABLE `coordenador` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.fornecedor
+-- Dumping structure for table test_promotech.fornecedor
 DROP TABLE IF EXISTS `fornecedor`;
 CREATE TABLE IF NOT EXISTS `fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -222,13 +190,10 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.fornecedor: ~0 rows (approximately)
-DELETE FROM `fornecedor`;
-/*!40000 ALTER TABLE `fornecedor` DISABLE KEYS */;
-/*!40000 ALTER TABLE `fornecedor` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.mensagem
+-- Dumping structure for table test_promotech.mensagem
 DROP TABLE IF EXISTS `mensagem`;
 CREATE TABLE IF NOT EXISTS `mensagem` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -243,13 +208,10 @@ CREATE TABLE IF NOT EXISTS `mensagem` (
   CONSTRAINT `fk_mensagem_compromisso1` FOREIGN KEY (`compromisso_id`) REFERENCES `compromisso` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.mensagem: ~0 rows (approximately)
-DELETE FROM `mensagem`;
-/*!40000 ALTER TABLE `mensagem` DISABLE KEYS */;
-/*!40000 ALTER TABLE `mensagem` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.pessoa
+-- Dumping structure for table test_promotech.pessoa
 DROP TABLE IF EXISTS `pessoa`;
 CREATE TABLE IF NOT EXISTS `pessoa` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -263,18 +225,12 @@ CREATE TABLE IF NOT EXISTS `pessoa` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
   UNIQUE KEY `foto_UNIQUE` (`foto`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.pessoa: ~2 rows (approximately)
-DELETE FROM `pessoa`;
-/*!40000 ALTER TABLE `pessoa` DISABLE KEYS */;
-INSERT INTO `pessoa` (`id`, `nome`, `telefone_fixo`, `telefone_celular`, `foto`, `email`, `cpf`, `rg`) VALUES
-	(1, 'Daniel Henrique da Silva', '', '84755243', '547100_419323204797050_1748708470_n.jpg', 'danielhenrique_1303@hotmail.com', '08784652438', ''),
-	(2, 'Coordenador de teste 1', '', '84755243', 'Eu.jpg', 'coordenador@email.com', '', '');
-/*!40000 ALTER TABLE `pessoa` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.promotor
+-- Dumping structure for table test_promotech.promotor
 DROP TABLE IF EXISTS `promotor`;
 CREATE TABLE IF NOT EXISTS `promotor` (
   `id` int(11) NOT NULL,
@@ -289,15 +245,10 @@ CREATE TABLE IF NOT EXISTS `promotor` (
   CONSTRAINT `fk_promotor_Pessoa1` FOREIGN KEY (`id`) REFERENCES `pessoa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.promotor: ~1 rows (approximately)
-DELETE FROM `promotor`;
-/*!40000 ALTER TABLE `promotor` DISABLE KEYS */;
-INSERT INTO `promotor` (`id`, `categoria`, `altura`, `manequim`, `peso`, `numero_calcado`, `deletado`) VALUES
-	(1, 'B', '170', '38', 65, 40, 0);
-/*!40000 ALTER TABLE `promotor` ENABLE KEYS */;
+-- Data exporting was unselected.
 
 
--- Dumping structure for table promotech.usuario
+-- Dumping structure for table test_promotech.usuario
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -307,10 +258,6 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table promotech.usuario: ~0 rows (approximately)
-DELETE FROM `usuario`;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+-- Data exporting was unselected.
 /*!40014 SET FOREIGN_KEY_CHECKS=1 */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-promotechpromotech
