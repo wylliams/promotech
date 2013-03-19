@@ -15,13 +15,15 @@
 					</label>
 				</div>
 				<br>
-				<div class="inputs">
+				<div class="inputs" id="input-password">
 					<label>
 						Senha:
 						<input type="text" name="senha" value="">
 					</label>
 				</div>
-				<a href="">Esqueceu sua senha?</a>
+				<a href="" id="">Esqueceu sua senha?</a>
+				<br>
+				<div class="btn" type="submit" id="btn-enviar">Enviar</div>
 			</div>
 		</div>
 	</body>
