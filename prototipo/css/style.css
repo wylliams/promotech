@@ -1,5 +1,12 @@
 *{margin: 0px; padding: 0px;}
 
+a{
+	color: #2f96b4;
+}
+a:hover{
+	color:#1f6377;
+}
+
 body{
 	margin-left:500px;
 	margin-top:80px;
@@ -8,7 +15,7 @@ body{
 
 .section{
 	width: 410px;
-	height: 443px;
+	height: 400px;
 	background-color:#E1E1E1;
 	border-radius:8px;
 	border:2px solid #CECECE;
@@ -23,6 +30,7 @@ body{
 	width:370px;
 	height:250px;
 	margin-left:20px;
+	margin-top: 20px;
 }
 .inputs{
 	width:300px;
@@ -38,5 +46,31 @@ body{
 	margin-left:20px;
 }
 .info a{
-	
+	margin-left:60px;
+}
+#input-password{
+	margin-bottom: 30px;
+}
+.btn{
+	width:75px;
+	height: 30px;
+	border-radius:10px;
+	text-align:center;
+	padding-top:7px;
+	padding-right: 1px;
+	font-size:17px;
+	color: #333333;
+	display:inline-block;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align:middle;
+	cursor:pointer;
+	background-color: #f5f5f5;
+	border:1px solid #CECECE;	
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+}
+.btn:hover{
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #e6e6e6);
+}
+#btn-enviar{
+	margin: 20px 0px 0px 220px;
 }
