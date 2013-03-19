@@ -1,0 +1,42 @@
+*{margin: 0px; padding: 0px;}
+
+body{
+	margin-left:500px;
+	margin-top:80px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.section{
+	width: 410px;
+	height: 443px;
+	background-color:#E1E1E1;
+	border-radius:8px;
+	border:2px solid #CECECE;
+}
+.logo{
+	width: 197px;
+	height: 171px;
+	background: url(../img/logo.png);
+	margin-left:100px;
+}
+.info{
+	width:370px;
+	height:250px;
+	margin-left:20px;
+}
+.inputs{
+	width:300px;
+	height: 30px;
+	margin-left:60px;
+}
+.inputs input{
+	margin-left:30px;
+	border-radius:12px;
+	padding:3px;
+}
+#user{
+	margin-left:20px;
+}
+.info a{
+	
+}
