@@ -10,11 +10,12 @@ a:hover{
 body{
 	margin-left:500px;
 	margin-top:80px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 .section{
-	width: 410px;
+	width: 400px;
 	height: 400px;
 	background-color:#E1E1E1;
 	border-radius:8px;
@@ -36,6 +37,8 @@ body{
 	width:300px;
 	height: 30px;
 	margin-left:60px;
+	font-weight: bold;
+	color: #333333;
 }
 .inputs input{
 	margin-left:30px;
@@ -47,19 +50,21 @@ body{
 }
 .info a{
 	margin-left:60px;
+	text-decoration: none;
 }
 #input-password{
 	margin-bottom: 30px;
 }
 .btn{
-	width:75px;
-	height: 30px;
+	width:70px;
+	height: 25px;
 	border-radius:10px;
 	text-align:center;
 	padding-top:7px;
 	padding-right: 1px;
-	font-size:17px;
+	font-size:13px;
 	color: #333333;
+	font-weight: bold;
 	display:inline-block;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	vertical-align:middle;
