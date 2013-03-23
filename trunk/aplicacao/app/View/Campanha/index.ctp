@@ -1,5 +1,5 @@
 <div class="campanha index">
-	<?php //var_dump($campanha);?>
+	<?php App::import('Lib', 'Util');?>
 	<h2><?php echo __('Campanha'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
@@ -18,8 +18,8 @@
 		<td><?php echo h($campanha['Campanha']['id']); ?>&nbsp;</td>
 		<td><?php echo h($campanha['Campanha']['nome']); ?>&nbsp;</td>
 		<td><?php echo h($campanha['Campanha']['local']); ?>&nbsp;</td>
-		<td><?php echo h($campanha['Campanha']['data_inicio']); ?>&nbsp;</td>
-		<td><?php echo h($campanha['Campanha']['data_fim']); ?>&nbsp;</td>
+		<td><?php echo h(Util::inverteData($campanha['Campanha']['data_inicio'])); ?>&nbsp;</td>
+		<td><?php echo h(Util::inverteData($campanha['Campanha']['data_fim'])); ?>&nbsp;</td>
 		<td><?php echo h($campanha['Campanha']['valor_orcado']); ?>&nbsp;</td>
 		<td><?php echo $this->Html->link(__($campanha['Cliente']['nome']), array('controller' => 'Cliente', 'action' => 'view', $campanha['Cliente']['id'])); ?>&nbsp;</td>
 		<td class="actions">
@@ -48,7 +48,7 @@
 <div class="actions">
 	<h3><?php echo __('Ações'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('Nova Campanha'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('Nova Campanha'), array('action' => 'addEtapa1')); ?></li>
 		<li><?php echo $this->Html->link(__('Listar Promotores'), array('controller' => 'Promotor', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('Listar Clientes'), array('controller' => 'Cliente', 'action' => 'index')); ?> </li>
 	</ul>

@@ -55,7 +55,7 @@ class PromotorController extends AppController {
 			
 			if($foto['type'] == 'image/jpg' || $foto['type'] == 'image/jpeg' || $foto['type'] == 'image/png'){
 				if($foto['size'] < 3000000){
-					move_uploaded_file($foto['tmp_name'], "C:\\wamp\\www\\promotech\\uploads\\".$foto['name']);
+					move_uploaded_file($foto['tmp_name'], ROOT_UPLOADS.$foto['name']);
 					//var_dump($this->request->data);
 					//die;
 					$this->request->data['Pessoa']['foto'] = $foto['name'];
@@ -107,7 +107,7 @@ class PromotorController extends AppController {
 			}else{
 				if($foto['type'] == 'image/jpg' || $foto['type'] == 'image/jpeg' || $foto['type'] == 'image/png'){
 					if($foto['size'] < 3000000){
-						move_uploaded_file($foto['tmp_name'], "C:\\wamp\\www\\promotech\\uploads\\".$foto['name']);
+						move_uploaded_file($foto['tmp_name'], ROOT_UPLOADS.$foto['name']);
 						//var_dump($this->request->data);
 						//die;
 						$this->request->data['Pessoa']['foto'] = $foto['name'];

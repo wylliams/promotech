@@ -941,3 +941,730 @@
 #10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PromotorController), Object(CakeRequest), Object(CakeResponse))
 #11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2013-03-18 13:37:32 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:38:40 Error: [MissingActionException] Action CategoriaProdutoController::fornecedor() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-18 13:38:48 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:39:33 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:39:51 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:40:06 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:40:30 Error: [MissingModelException] fornecedor
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('fornecedor', Array, Array)
+#1 C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php(25): Controller->paginate('fornecedor', Array)
+#2 [internal function]: FornecedorController->index()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(FornecedorController), Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(FornecedorController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-03-18 13:50:33 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php, line 90]
+2013-03-18 13:50:33 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 90)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 90, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\pro...', 90, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-18 13:50:37 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\wamp\www\promotech\aplicacao\app\Controller\FornecedorController.php, line 90]
+2013-03-18 13:50:37 Error: [FatalErrorException] Call to a member function read() on a non-object
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 90)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 90, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\pro...', 90, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-21 12:12:45 Error: [MissingViewException] View file "C:\wamp\www\promotech\aplicacao\app\View\Campanha\add_etapa1.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-21 12:24:24 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php, line 159]
+2013-03-21 12:24:24 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 159)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 159, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\pro...', 159, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-21 12:30:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fornecedoor.id' in 'field list'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `fornece...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `fornece...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `fornece...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Fornecedor), Array)
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(159): Model->find('list', Array)
+#6 [internal function]: CampanhaController->addEtapa2('1')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-21 14:13:50 Error: [MissingControllerException] Controller class CcoordenadorController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-21 14:14:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(Pessoa), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2208): Model->save(Array, Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2031): Model->saveAssociated(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\CoordenadorController.php(52): Model->saveAll(Array)
+#7 [internal function]: CoordenadorController->add()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CoordenadorController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CoordenadorController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-21 14:15:22 Error: [MissingActionException] Action CampanhaController::addetepa2() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-21 14:15:31 Error: [MissingActionException] Action CampanhaController::addEtepa2() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-22 01:40:26 Error: [NotFoundException] Campanha Inválida
+#0 [internal function]: CampanhaController->addEtapa2('indicadores')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:41:08 Error: [MissingActionException] Action CampanhaController::indicadores() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-22 01:42:25 Error: [NotFoundException] Campanha Inválida
+#0 [internal function]: CampanhaController->addEtapa2('categoriaprodut...', 'indicadores')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:42:54 Error: [MissingActionException] Action CampanhaController::categoriaproduto() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-22 01:44:04 Error: [NotFoundException] Campanha Inválida
+#0 [internal function]: CampanhaController->addEtapa2()
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:44:12 Error: [NotFoundException] Campanha Inválida
+#0 [internal function]: CampanhaController->addEtapa2('localhost', 'promotech', 'aplicacao', 'categoriaprodut...', 'indicadores')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:45:33 Error: [MissingActionException] Action CampanhaController::categoriaprodutos() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-22 01:52:41 Error: [MissingViewException] View file "C:\wamp\www\promotech\aplicacao\app\View\Campanha\categoria_produto.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:53:22 Error: [MissingViewException] View file "C:\wamp\www\promotech\aplicacao\app\View\Campanha\categoria_produto.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-22 01:53:36 Error: [MissingActionException] Action CategoriaProdutoController::listarPorFornecedor() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\RequestHandlerComponent.php(244): Object->requestAction('/CategoriaProdu...', Array)
+#4 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CampanhaController), Array, NULL, true)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(760): CakeEventManager->dispatch(Object(CakeEvent))
+#9 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(174): Controller->redirect(Array)
+#10 [internal function]: CampanhaController->categoriaProduto('1')
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#12 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-03-22 01:55:17 Error: [MissingActionException] Action CategoriaProdutoController::listarPorFornecedor() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\RequestHandlerComponent.php(244): Object->requestAction('/CategoriaProdu...', Array)
+#4 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CampanhaController), Array, NULL, true)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(760): CakeEventManager->dispatch(Object(CakeEvent))
+#9 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(173): Controller->redirect(Array)
+#10 [internal function]: CampanhaController->categoriaProduto('1')
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#12 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-03-22 01:55:47 Error: [MissingViewException] View file "C:\wamp\www\promotech\aplicacao\app\View\CategoriaProduto\listar_por_fornecedor.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\RequestHandlerComponent.php(244): Object->requestAction('/CategoriaProdu...', Array)
+#6 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CampanhaController), Array, NULL, true)
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#8 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(760): CakeEventManager->dispatch(Object(CakeEvent))
+#11 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(173): Controller->redirect(Array)
+#12 [internal function]: CampanhaController->categoriaProduto('1')
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#14 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#15 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2013-03-22 02:08:03 Error: Fatal Error (1): Call to undefined method CategoriaProdutoController::find() in [C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php, line 118]
+2013-03-22 02:08:03 Error: [FatalErrorException] Call to undefined method CategoriaProdutoController::find()
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 02:08:10 Error: Fatal Error (1): Call to undefined method CategoriaProdutoController::find() in [C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php, line 118]
+2013-03-22 02:08:10 Error: [FatalErrorException] Call to undefined method CategoriaProdutoController::find()
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 12:44:58 Error: Fatal Error (1): Call to undefined method CategoriaProdutoController::find() in [C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php, line 118]
+2013-03-22 12:44:58 Error: [FatalErrorException] Call to undefined method CategoriaProdutoController::find()
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 12:45:29 Error: Fatal Error (1): Call to undefined method CategoriaProdutoController::find() in [C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php, line 118]
+2013-03-22 12:45:29 Error: [FatalErrorException] Call to undefined method CategoriaProdutoController::find()
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\wamp\www\pro...', 118, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-22 12:49:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CategoriaProdutoFornecedor' in 'where clause'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Categor...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(CategoriaProduto), Array)
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php(118): Model->find('all', Array)
+#6 [internal function]: CategoriaProdutoController->CategoriaFornecedor('1')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriaProdutoController), Array)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\RequestHandlerComponent.php(244): Object->requestAction('/CategoriaProdu...', Array)
+#12 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CampanhaController), Array, NULL, true)
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#14 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#15 C:\wamp\www\promotech\aplicacao\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#16 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(760): CakeEventManager->dispatch(Object(CakeEvent))
+#17 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(173): Controller->redirect(Array)
+#18 [internal function]: CampanhaController->categoriaProduto('1')
+#19 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#20 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#21 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#22 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#23 {main}
+2013-03-22 12:56:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CategoriaProdutoFornecedor.id_fornecedor' in 'where clause'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Categor...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(CategoriaProdutoFornecedor), Array)
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\CategoriaProdutoController.php(118): Model->find('all', Array)
+#6 [internal function]: CategoriaProdutoController->CategoriaFornecedor('1')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriaProdutoController), Array)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CategoriaProdutoController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\Object.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\RequestHandlerComponent.php(244): Object->requestAction('/CategoriaProdu...', Array)
+#12 [internal function]: RequestHandlerComponent->beforeRedirect(Object(CampanhaController), Array, NULL, true)
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#14 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#15 C:\wamp\www\promotech\aplicacao\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#16 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(760): CakeEventManager->dispatch(Object(CakeEvent))
+#17 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(173): Controller->redirect(Array)
+#18 [internal function]: CampanhaController->categoriaProduto('1')
+#19 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#20 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#21 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#22 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#23 {main}
+2013-03-22 13:27:28 Error: Fatal Error (4): syntax error, unexpected ''Salvar)); ?>' (T_ENCAPSED_AND_WHITESPACE), expecting ')' in [C:\wamp\www\promotech\aplicacao\app\View\CategoriaProduto\categoria_fornecedor.ctp, line 7]
+2013-03-22 13:27:28 Error: [FatalErrorException] syntax error, unexpected ''Salvar)); ?>' (T_ENCAPSED_AND_WHITESPACE), expecting ')'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 7, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\pro...', 7, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 12:44:37 Error: [MissingActionException] Action CampanhaController::selecaoCategoriaProduto() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-23 12:45:18 Error: [MissingActionException] Action CampanhaController::selecaoCategoriaProduto() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-23 12:45:45 Error: [MissingActionException] Action CampanhaController::selecaoCategoriaProduto() could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-23 13:06:24 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php, line 160]
+2013-03-23 13:06:24 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 160)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 160, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\pro...', 160, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 13:06:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CapanhaFornecedor.campanha_id' in 'where clause'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Fornece...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Fornece...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Fornece...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(CampanhaFornecedor), Array)
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(160): Model->find('all', Array)
+#6 [internal function]: CampanhaController->addEtapa2('1')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-23 14:04:01 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php, line 163]
+2013-03-23 14:04:01 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 163)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 163, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\pro...', 163, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 14:19:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`promotech`.`campanha_fornecedor_categoria_produto`, CONSTRAINT `fk_categoria_produto_campanha_categoria_produto1` FOREIGN KEY (`categoria_produto_id`) REFERENCES `categoria_produto` (`id`) ON)
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(CampanhaFornecedorCategoriaProduto), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(195): Model->save(Array)
+#5 [internal function]: CampanhaController->adicaoCategoriaProduto('2', '1')
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-23 14:34:53 Error: Fatal Error (4): syntax error, unexpected '$arrayFornecedores' (T_VARIABLE) in [C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php, line 164]
+2013-03-23 14:34:53 Error: [FatalErrorException] syntax error, unexpected '$arrayFornecedores' (T_VARIABLE)
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 164)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 164, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\pro...', 164, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 14:54:23 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php, line 207]
+2013-03-23 14:54:23 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 207)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\pro...', 207, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\pro...', 207, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 15:40:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`promotech`.`campanha_fornecedor_categoria_produto`, CONSTRAINT `fk_campanha_fornecedor_categoria_produto_campanha_fornecedor1` FOREIGN KEY (`campanha_fornecedor_id`) REFERENCES `campanha_forn)
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(CampanhaFornecedorCategoriaProduto), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(254): Model->save(Array)
+#5 [internal function]: CampanhaController->adicaoCategoriaProduto('2', '1')
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-23 16:25:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fields' in 'where clause'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Campanh...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Campanh...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Campanh...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(CampanhaFornecedor), Array)
+#5 C:\wamp\www\promotech\aplicacao\app\Controller\CampanhaController.php(167): Model->find('list', Array)
+#6 [internal function]: CampanhaController->addEtapa2('1')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CampanhaController), Array)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CampanhaController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-23 16:37:35 Error: Fatal Error (1): Class 'Util' not found in [C:\wamp\www\promotech\aplicacao\app\View\Campanha\index.ctp, line 21]
+2013-03-23 16:37:35 Error: [FatalErrorException] Class 'Util' not found
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'Util' no...', 'C:\wamp\www\pro...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Util' no...', 'C:\wamp\www\pro...', 21, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Util' no...', 'C:\wamp\www\pro...', 21, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 17:03:57 Error: [MissingControllerException] Controller class UploadsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 17:05:26 Error: [MissingControllerException] Controller class UploadsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 17:05:36 Error: [MissingControllerException] Controller class UploadsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 17:05:59 Error: [MissingControllerException] Controller class UploadsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 17:55:28 Error: [NotFoundException] Invalid coordenador
+#0 [internal function]: CoordenadorController->view('<pre class=')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CoordenadorController), Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CoordenadorController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-23 18:07:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'anexo_curriculum_UNIQUE'
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(Coordenador), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2225): Model->save(Array, Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2031): Model->saveAssociated(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\CoordenadorController.php(62): Model->saveAll(Array)
+#7 [internal function]: CoordenadorController->add()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CoordenadorController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CoordenadorController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:15:56 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:17:20 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:21:11 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 20:21:19 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 20:21:38 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 20:21:48 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:22:46 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:30:43 Error: [CakeException] Authentication adapter "userModel" was not found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(630): AuthComponent->constructAuthenticate()
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#3 [internal function]: UsuarioController->login()
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-23 20:31:10 Error: [CakeException] Authentication adapter "userModel" was not found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(630): AuthComponent->constructAuthenticate()
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): AuthComponent->login()
+#3 [internal function]: UsuarioController->login()
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-23 20:37:42 Error: Fatal Error (1): Class 'AuthComponent' not found in [C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php, line 242]
+2013-03-23 20:37:42 Error: [FatalErrorException] Class 'AuthComponent' not found
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Class 'AuthComp...', 'C:\wamp\www\pro...', 242)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AuthComp...', 'C:\wamp\www\pro...', 242, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'AuthComp...', 'C:\wamp\www\pro...', 242, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 20:47:48 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 20:51:47 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php, line 20]
+2013-03-23 20:51:47 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\pro...', 20, Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\pro...', 20, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-23 20:57:53 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(17): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 20:59:56 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:05:41 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('admin', 'admin')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:14:35 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('admin', 'admin')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:17:48 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('daniel', 'daniel')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:26:55 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('daniel', 'daniel')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:28:48 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('daniel', 'daniel')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:31:17 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('daniel', 'daniel')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 21:34:59 Error: [MissingTableException] Table users for model User was not found in datasource default.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('users')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(89): Model->find('first', Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('1234', '1234')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(633): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\AuthComponent.php(510): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(18): AuthComponent->login()
+#7 [internal function]: UsuarioController->login()
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-23 22:06:03 Error: [MissingControllerException] Controller class Controller could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-23 22:07:28 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(813): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\promotech\aplicacao\app\View\Layouts\default.ctp(50): View->__get('Auth')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(921): include('C:\wamp\www\pro...')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(884): View->_evaluate('C:\wamp\www\pro...', Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(540): View->_render('C:\wamp\www\pro...')
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(484): View->renderLayout('', 'default')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-23 22:16:49 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\HelperCollection.php(62): HelperCollection->load('Auth')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(813): HelperCollection->__isset('Auth')
+#2 C:\wamp\www\promotech\aplicacao\app\View\Layouts\default.ctp(50): View->__get('Auth')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(921): include('C:\wamp\www\pro...')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(884): View->_evaluate('C:\wamp\www\pro...', Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(540): View->_render('C:\wamp\www\pro...')
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(484): View->renderLayout('', 'default')
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

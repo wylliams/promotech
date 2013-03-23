@@ -23,7 +23,7 @@
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<?php echo h($coordenador['Pessoa']['foto']); ?>
+			<img src="<?php echo BASE_UPLOADS.$coordenador['Pessoa']['foto'];?>" alt="<?php $coordenador['Pessoa']['nome'];?>" height="150" width="150"/>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Telefone Fixo'); ?></dt>

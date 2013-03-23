@@ -58,8 +58,10 @@ class Inflector {
 			'.*[nrlm]ese', '.*deer', '.*fish', '.*measles', '.*ois', '.*pox', '.*sheep', 'people',
 			'categoria_produto', 'fornecedor', 'campanha', 'promotor', 'coordenador',
 			'cliente', 'compromisso', 'mensagem', 'usuario', 'campanhapromotor', 'campanhacoordenador',
-			'campanhacategoriaprodutofornecedor', 'categoriaproduto', 'categoriaprodutofornecedor', 
-			'campanha_coordenador'
+			'campanhafornecedorcategoriaproduto', 'campanhafornecedor' ,'categoriaproduto', 'categoriaprodutofornecedor', 
+			'campanha_coordenador', 'categoria_produto_fornecedor', 'campanha_promotor', 'campanha_fornecedor_categoria_produto',
+			'campanha_fornecedor', 'categoria_produto'
+			
 		),
 		'irregular' => array(
 			'atlas' => 'atlases',

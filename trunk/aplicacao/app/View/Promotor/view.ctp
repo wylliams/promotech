@@ -23,7 +23,7 @@
 		</dd>
 		<dt><?php echo __('Foto'); ?></dt>
 		<dd>
-			<img src="http://localhost/promotech/uploads/<?php echo $promotor['Pessoa']['foto'];?>" alt="<?php $promotor['Pessoa']['nome'];?>" height="150" width="150"/>
+			<img src="<?php echo BASE_UPLOADS.$promotor['Pessoa']['foto'];?>" alt="<?php $promotor['Pessoa']['nome'];?>" height="150" width="150"/>
 		</dd>
 		<dt><?php echo __('Categoria'); ?></dt>
 		<dd>
