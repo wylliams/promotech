@@ -179,3 +179,30 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+$base = ROOT;
+
+$arrayPartes = explode(DS, $base);
+array_pop($arrayPartes);
+$base = "";
+foreach ($arrayPartes as $parte) {
+	$base .= $parte.DS;
+}
+$base = rtrim($base, DS);
+$base .= DS.'uploads'.DS;
+define('ROOT_UPLOADS', $base);
+
+$base2 = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+$arrayPartes2 = explode("/", $base2);
+array_pop($arrayPartes2);
+array_pop($arrayPartes2);
+array_pop($arrayPartes2);
+array_pop($arrayPartes2);
+$base2 = "";
+foreach ($arrayPartes2 as $parte2) {
+	$base2 .= $parte2."/";
+}
+define('BASE_HTTP', $base2);
+$base2 .= "uploads/";
+define('BASE_UPLOADS', $base2);

@@ -82,6 +82,6 @@
 		<li><?php echo $this->Html->link(__('Editar Campanha'), array('action' => 'edit', $campanha['Campanha']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Deletar Campanha'), array('action' => 'delete', $campanha['Campanha']['id']), null, __('Are you sure you want to delete # %s?', $campanha['Campanha']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('Listar Campanhas'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Nova Campanha'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Nova Campanha'), array('action' => 'addEtapa1')); ?> </li>
 	</ul>
 </div>

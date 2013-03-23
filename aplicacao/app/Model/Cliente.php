@@ -15,7 +15,7 @@ class Cliente extends AppModel {
 		'nome' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve preencher este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -25,7 +25,7 @@ class Cliente extends AppModel {
 		'telefone_fixo' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve preencher este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -35,7 +35,7 @@ class Cliente extends AppModel {
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve fornecer um email válido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -45,7 +45,7 @@ class Cliente extends AppModel {
 		'banco' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve preencher este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -55,7 +55,7 @@ class Cliente extends AppModel {
 		'agencia' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve preencher este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -65,7 +65,7 @@ class Cliente extends AppModel {
 		'conta' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve preencher este campo',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

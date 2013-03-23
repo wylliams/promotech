@@ -1,7 +1,7 @@
 <div class="campanha form">
 <?php echo $this->Form->create('Campanha'); ?>
 	<fieldset>
-		<legend><?php echo __('Adicionar Campanha'); ?></legend>
+		<legend><?php echo __('Adicionar Campanha/Etapa 1'); ?></legend>
 	<?php
 		echo $this->Form->input('nome');
 		echo $this->Form->input('local');

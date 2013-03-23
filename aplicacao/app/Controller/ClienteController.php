@@ -13,7 +13,7 @@ class ClienteController extends AppController {
  *
  * @var array
  */
-	public $components = array('Session');
+	public $components = array('Session', 'RequestHandler');
 
 /**
  * index method

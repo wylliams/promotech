@@ -18,7 +18,7 @@
 		<td><?php echo h($promotor['Promotor']['categoria']); ?>&nbsp;</td>
 		<td><?php echo h($promotor['Pessoa']['telefone_celular']); ?>&nbsp;</td>
 		<td><?php echo h($promotor['Pessoa']['email']); ?>&nbsp;</td>
-		<td><img src="http://localhost/promotech/uploads/<?php echo $promotor['Pessoa']['foto'];?>" alt="<?php $promotor['Pessoa']['nome'];?>" height="150" width="150"/>&nbsp;</td>
+		<td><img src="<?php echo BASE_UPLOADS.$promotor['Pessoa']['foto'];?>" alt="<?php $promotor['Pessoa']['nome'];?>" height="150" width="150"/>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $promotor['Promotor']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $promotor['Promotor']['id'])); ?>

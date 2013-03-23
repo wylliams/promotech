@@ -1,5 +1,5 @@
 <div class="coordenador form">
-<?php echo $this->Form->create('Coordenador'); ?>
+<?php echo $this->Form->create('Coordenador', array('type' => 'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Editar Coordenador'); ?></legend>
 	<?php
@@ -8,7 +8,7 @@
 		echo $this->Form->input('Pessoa.nome');
 		echo $this->Form->input('Pessoa.cpf');
 		echo $this->Form->input('Pessoa.rg');
-		echo $this->Form->input('Pessoa.foto');
+		echo $this->Form->input('Pessoa.foto', array('type' => 'file'));
 		echo $this->Form->input('Pessoa.telefone_fixo');
 		echo $this->Form->input('Pessoa.telefone_celular');
 		echo $this->Form->input('Pessoa.email');

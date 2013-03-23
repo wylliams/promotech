@@ -17,7 +17,7 @@ class Coordenador extends AppModel {
 		'pessoa_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve fornecer um valor numerico apenas',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

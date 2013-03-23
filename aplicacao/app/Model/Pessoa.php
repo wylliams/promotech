@@ -24,7 +24,7 @@ class Pessoa extends AppModel {
 		'nome' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo deve ser preechido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -34,7 +34,7 @@ class Pessoa extends AppModel {
 		'telefone_celular' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo deve ser preechido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -44,7 +44,7 @@ class Pessoa extends AppModel {
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
-				//'message' => 'Your custom message here',
+				'message' => 'Você deve fornecer um email válido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -54,7 +54,7 @@ class Pessoa extends AppModel {
 		'tipo' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Este campo deve ser preechido',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
