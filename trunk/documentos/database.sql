@@ -3,14 +3,14 @@
 -- Server version:               5.5.24-log - MySQL Community Server (GPL)
 -- Server OS:                    Win32
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-03-16 18:10:37
+-- Date/time:                    2013-03-23 19:31:58
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!40014 SET FOREIGN_KEY_CHECKS=0 */;
 
--- Dumping structure for table test_promotech.campanha
+-- Dumping structure for table promotech.campanha
 DROP TABLE IF EXISTS `campanha`;
 CREATE TABLE IF NOT EXISTS `campanha` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `campanha` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.campanha_coordenador
+-- Dumping structure for table promotech.campanha_coordenador
 DROP TABLE IF EXISTS `campanha_coordenador`;
 CREATE TABLE IF NOT EXISTS `campanha_coordenador` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS `campanha_coordenador` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.campanha_fornecedor
+-- Dumping structure for table promotech.campanha_fornecedor
 DROP TABLE IF EXISTS `campanha_fornecedor`;
 CREATE TABLE IF NOT EXISTS `campanha_fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `campanha_fornecedor` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.campanha_fornecedor_categoria_produto
+-- Dumping structure for table promotech.campanha_fornecedor_categoria_produto
 DROP TABLE IF EXISTS `campanha_fornecedor_categoria_produto`;
 CREATE TABLE IF NOT EXISTS `campanha_fornecedor_categoria_produto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `campanha_fornecedor_categoria_produto` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.campanha_promotor
+-- Dumping structure for table promotech.campanha_promotor
 DROP TABLE IF EXISTS `campanha_promotor`;
 CREATE TABLE IF NOT EXISTS `campanha_promotor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `campanha_promotor` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.categoria_produto
+-- Dumping structure for table promotech.categoria_produto
 DROP TABLE IF EXISTS `categoria_produto`;
 CREATE TABLE IF NOT EXISTS `categoria_produto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `categoria_produto` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.categoria_produto_fornecedor
+-- Dumping structure for table promotech.categoria_produto_fornecedor
 DROP TABLE IF EXISTS `categoria_produto_fornecedor`;
 CREATE TABLE IF NOT EXISTS `categoria_produto_fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `categoria_produto_fornecedor` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.cliente
+-- Dumping structure for table promotech.cliente
 DROP TABLE IF EXISTS `cliente`;
 CREATE TABLE IF NOT EXISTS `cliente` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -146,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.compromisso
+-- Dumping structure for table promotech.compromisso
 DROP TABLE IF EXISTS `compromisso`;
 CREATE TABLE IF NOT EXISTS `compromisso` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `compromisso` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.coordenador
+-- Dumping structure for table promotech.coordenador
 DROP TABLE IF EXISTS `coordenador`;
 CREATE TABLE IF NOT EXISTS `coordenador` (
   `id` int(11) NOT NULL,
@@ -171,14 +171,13 @@ CREATE TABLE IF NOT EXISTS `coordenador` (
   `deletado` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`),
-  UNIQUE KEY `anexo_curriculum_UNIQUE` (`anexo_curriculum`),
   CONSTRAINT `fk_coordenador_Pessoa1` FOREIGN KEY (`id`) REFERENCES `pessoa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.fornecedor
+-- Dumping structure for table promotech.fornecedor
 DROP TABLE IF EXISTS `fornecedor`;
 CREATE TABLE IF NOT EXISTS `fornecedor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -193,7 +192,7 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.mensagem
+-- Dumping structure for table promotech.mensagem
 DROP TABLE IF EXISTS `mensagem`;
 CREATE TABLE IF NOT EXISTS `mensagem` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -211,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `mensagem` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.pessoa
+-- Dumping structure for table promotech.pessoa
 DROP TABLE IF EXISTS `pessoa`;
 CREATE TABLE IF NOT EXISTS `pessoa` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -230,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `pessoa` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.promotor
+-- Dumping structure for table promotech.promotor
 DROP TABLE IF EXISTS `promotor`;
 CREATE TABLE IF NOT EXISTS `promotor` (
   `id` int(11) NOT NULL,
@@ -248,11 +247,12 @@ CREATE TABLE IF NOT EXISTS `promotor` (
 -- Data exporting was unselected.
 
 
--- Dumping structure for table test_promotech.usuario
+-- Dumping structure for table promotech.usuario
 DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE IF NOT EXISTS `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(45) NOT NULL,
+  `deletado` int(11) NOT NULL DEFAULT '0',
   `password` varchar(45) NOT NULL,
   `email` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
