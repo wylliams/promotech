@@ -55,7 +55,7 @@ class AppController extends Controller {
 		
 		// Action da tela após o login (com sucesso)
 		$this->Auth->loginRedirect = array(
-			'controller' => 'campanha',
+			'controller' => 'principal',
 			'action' => 'index'
 		);
 		
