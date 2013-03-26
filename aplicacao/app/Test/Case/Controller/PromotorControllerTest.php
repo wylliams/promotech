@@ -36,6 +36,8 @@ class PromotorControllerTest extends ControllerTestCase {
  * @return void
  */
 	public function testView() {
+	
+	
 	}
 
 /**
