@@ -60,7 +60,7 @@ class Inflector {
 			'cliente', 'compromisso', 'mensagem', 'usuario', 'campanhapromotor', 'campanhacoordenador',
 			'campanhafornecedorcategoriaproduto', 'campanhafornecedor' ,'categoriaproduto', 'categoriaprodutofornecedor', 
 			'campanha_coordenador', 'categoria_produto_fornecedor', 'campanha_promotor', 'campanha_fornecedor_categoria_produto',
-			'campanha_fornecedor', 'categoria_produto'
+			'campanha_fornecedor', 'categoria_produto', 'principal'
 			
 		),
 		'irregular' => array(
