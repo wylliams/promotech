@@ -51,12 +51,12 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'My Site'),
-		'host' => 'localhost',
+		'from' => array('suporte@recipromo.com.br' => 'Promotech'),
+		'host' => 'mail.recipromo.com.br',
 		'port' => 25,
 		'timeout' => 30,
-		'username' => 'user',
-		'password' => 'secret',
+		'username' => 'suporte@recipromo.com.br',
+		'password' => 'suporte1971',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',

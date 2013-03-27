@@ -48,7 +48,7 @@ class Usuario extends AppModel {
  *
  * @var array
  */
-	/*public $hasMany = array(
+	public $hasMany = array(
 		'Compromisso' => array(
 			'className' => 'Compromisso',
 			'foreignKey' => 'usuario_id',
@@ -62,6 +62,6 @@ class Usuario extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		)
-	);*/
+	);
 
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ *<?php echo $this->fetch('content');?>
  * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
@@ -16,14 +16,20 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-	<title><?php echo $title_for_layout;?></title>
+	<meta charset="utf-8">
+	<title>Promotech</title>
 </head>
-<body>
-	<?php echo $this->fetch('content');?>
-
-	<p>This email was sent using the <a href="http://cakephp.org">CakePHP Framework</a></p>
+<body style="margin:0;padding:0;background:#f6f6f6">
+	<div style="width:600px;margin:0 auto;padding:0">
+		<div style="padding:40px;color:#444;font:normal 14px/21px Arial, sans-serif;border:1px solid #eaeaea;background:#fff;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 0 7px #dad9d9">
+			<h1 style="font-size:28px;color:#191970">Agenda da Semana Promotech</h1>
+			<p><b>Campanhas</b></p>
+			<p><?php echo $campanhas; ?></p>
+			<p><b>Compromissos</b></p>
+			<p><?php echo $compromissos; ?></p>
+		</div>
+	</div>
 </body>
 </html>
