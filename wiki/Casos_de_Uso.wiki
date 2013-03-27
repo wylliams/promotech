@@ -817,10 +817,17 @@ Pós-condição: um email será enviado.
 
 Fluxo de eventos principal
 
-    Quanto o usuário logar, o sistema irá verificar a proximidade dos eventos da agenda ou da campanha, caso o evento esteja para acontecer dentro da semana em vigor, o sistema irá enviar um email informando do acontecimento dos eventos.
+    Uma vez por semana, nas segundas-feiras, o sistema irá verificar a proximidade dos eventos da agenda ou da campanha, caso o evento esteja para acontecer dentro da semana em vigor, o sistema irá enviar um email informando do acontecimento dos eventos.
 
 
 
 Fluxos secundários
 
     Antes do passo 1 o sistema verifica se algum lembrete já foi enviado naquele dia, se sim, ele não executa o passo.
+
+==UC13 - Gerar Relatórios == 
+Prioridade: Desejável
+Descrição do requisito funcional: O sistema deve gerar relatórios que facilitem a tomada de decissões e possibilitem uma melhor visão do próprio negócio
+
+Fluxo de eventos principal
+    Cliente deve
