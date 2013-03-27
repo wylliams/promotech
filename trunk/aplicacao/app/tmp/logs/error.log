@@ -1668,3 +1668,107 @@
 #9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
 #10 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2013-03-25 23:41:24 Error: [MissingControllerException] Controller class TestController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 23:42:37 Error: [MissingControllerException] Controller class TestsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 23:43:00 Error: [MissingControllerException] Controller class TestsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 23:43:16 Error: [MissingControllerException] Controller class TestController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 23:43:19 Error: [MissingControllerException] Controller class TestesController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-25 23:43:22 Error: [MissingControllerException] Controller class TestsController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-26 02:25:03 Error: [MissingControllerException] Controller class MensagemController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-27 00:13:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'deletado' in where clause is ambiguous
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Comprom...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Comprom...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Comprom...', false)
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2630): DboSource->read(Object(Compromisso), Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate('Compromisso', Array, Array)
+#7 C:\wamp\www\promotech\aplicacao\app\Controller\CompromissoController.php(17): Controller->paginate('Compromisso', Array)
+#8 [internal function]: CompromissoController->index()
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompromissoController), Array)
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompromissoController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-27 00:21:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`promotech`.`compromisso`, CONSTRAINT `fk_compromisso_usuario1` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `pr...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `pr...')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1730): DboSource->create(Object(Compromisso), Array, Array)
+#4 C:\wamp\www\promotech\aplicacao\app\Controller\CompromissoController.php(44): Model->save(Array)
+#5 [internal function]: CompromissoController->add()
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompromissoController), Array)
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompromissoController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-27 01:34:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> {'2013-03-27'} and data_inicio <= {'1364688000'}' at line 1
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('select * from c...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('select * from c...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(538): DboSource->fetchAll('select * from c...')
+#4 [internal function]: DboSource->query('select * from c...')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2996): call_user_func_array(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PrincipalController.php(28): Model->query('select * from c...')
+#7 [internal function]: PrincipalController->index('home')
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PrincipalController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PrincipalController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-27 01:35:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> 2013-03-27 and data_inicio <= 1364688000' at line 1
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('select * from c...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('select * from c...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(538): DboSource->fetchAll('select * from c...')
+#4 [internal function]: DboSource->query('select * from c...')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2996): call_user_func_array(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PrincipalController.php(28): Model->query('select * from c...')
+#7 [internal function]: PrincipalController->index('home')
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PrincipalController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PrincipalController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-27 01:37:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> 2013-03-27 and data_inicio <= 2013-03-31' at line 1
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('select * from c...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('select * from c...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(538): DboSource->fetchAll('select * from c...')
+#4 [internal function]: DboSource->query('select * from c...')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2996): call_user_func_array(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PrincipalController.php(28): Model->query('select * from c...')
+#7 [internal function]: PrincipalController->index('home')
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PrincipalController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PrincipalController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-03-27 01:38:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> '2013-03-27' and data_inicio <= '2013-03-31'' at line 1
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('select * from c...', Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('select * from c...', Array, Array)
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(538): DboSource->fetchAll('select * from c...')
+#4 [internal function]: DboSource->query('select * from c...')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(2996): call_user_func_array(Array, Array)
+#6 C:\wamp\www\promotech\aplicacao\app\Controller\PrincipalController.php(28): Model->query('select * from c...')
+#7 [internal function]: PrincipalController->index('home')
+#8 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PrincipalController), Array)
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PrincipalController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
