@@ -13,6 +13,7 @@ class UsuarioController extends AppController {
     }
 
 	public function login() {
+		$this->render("login", "login");
 		if($this->request->is("post") || $this->request->is("put")){
 			//var_dump($this->request->data);
 			//die;

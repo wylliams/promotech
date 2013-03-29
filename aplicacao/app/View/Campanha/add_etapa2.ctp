@@ -1,30 +1,35 @@
-<div class="campanha form">
-<?php echo $this->Form->create('Campanha'); ?>
-	<fieldset>
-		<legend><?php echo __('Adicionar Campanha/Etapa 2'); ?></legend>
-		<?php echo $this->Form->input('Campanha.id');?>
-		<?php
-		foreach($fornecedores as $fornecedor){?>
-			<dt></dt>
-			<dl>
-				<a href="#janela1" class="modal" idFornecedor="<?php echo $fornecedor['Fornecedor']['id']; ?>"><?php echo $fornecedor['Fornecedor']['nome']?></a>&nbsp;<?php echo in_array($fornecedor['Fornecedor']['id'], $campanhaFornecedor) ? "*":"" ;?>
-			</dl>
-			
-		<?php }
-		?>
-	</fieldset>
-<?php echo $this->Form->end(__('Salvar')); ?>
+<div class="left_side">	
+	<div class="actions">
+		<h3><?php echo __('Ações'); ?></h3>
+		<ul>
+	
+			<li><?php echo $this->Html->link(__('Listar Campanhas'), array('action' => 'index')); ?></li>
+			<li><?php echo $this->Html->link(__('Listar Promotores'), array('controller' => 'Promotor', 'action' => 'index')); ?> </li>
+			<li><?php echo $this->Html->link(__('Listar Clientes'), array('controller' => 'Cliente', 'action' => 'index')); ?> </li>
+		</ul>
+	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Ações'); ?></h3>
-	<ul>
-
-		<li><?php echo $this->Html->link(__('Listar Campanhas'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('Listar Promotores'), array('controller' => 'Promotor', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('Listar Clientes'), array('controller' => 'Cliente', 'action' => 'index')); ?> </li>
-	</ul>
-</div>
- 
+<div class="right_side">
+	<div class="view">
+		<div class="campanha form">
+		<?php echo $this->Form->create('Campanha'); ?>
+			<fieldset>
+				<legend><?php echo __('Adicionar Campanha/Etapa 2'); ?></legend>
+				<?php echo $this->Form->input('Campanha.id');?>
+				<?php
+				foreach($fornecedores as $fornecedor){?>
+					<dt></dt>
+					<dl>
+						<a href="#janela1" class="modal" idFornecedor="<?php echo $fornecedor['Fornecedor']['id']; ?>"><?php echo $fornecedor['Fornecedor']['nome']?></a>&nbsp;<?php echo in_array($fornecedor['Fornecedor']['id'], $campanhaFornecedor) ? "*":"" ;?>
+					</dl>
+					
+				<?php }
+				?>
+			</fieldset>
+		<?php echo $this->Form->end(__('Salvar')); ?>
+		</div>
+	</div>
+</div> 
 <div class="window" id="janela1">
 </div> 
  

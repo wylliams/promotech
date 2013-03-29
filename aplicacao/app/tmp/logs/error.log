@@ -1772,3 +1772,71 @@
 #10 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PrincipalController), Object(CakeRequest), Object(CakeResponse))
 #11 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2013-03-27 12:50:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Datasource\DboSource.php(261): Mysql->connect()
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(3179): Model->setSource('usuario')
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Model\Model.php(1301): Model->getDataSource()
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\View\Helper\FormHelper.php(197): Model->schema()
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\View\Helper\FormHelper.php(438): FormHelper->_introspectModel('Usuario', 'fields')
+#8 C:\wamp\www\promotech\aplicacao\app\View\Usuario\login.ctp(3): FormHelper->create('Usuario')
+#9 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(921): include('C:\wamp\www\pro...')
+#10 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(884): View->_evaluate('C:\wamp\www\pro...', Array)
+#11 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(476): View->_render('C:\wamp\www\pro...')
+#12 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#13 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#14 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-03-27 13:13:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-27 13:13:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-27 13:13:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-27 13:17:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-29 12:10:19 Error: [MissingLayoutException] Layout file "C:\wamp\www\promotech\aplicacao\app\View\Layouts\login.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(514): View->_getLayoutFileName('login')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(484): View->renderLayout('', 'login')
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render('login', 'login')
+#3 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): Controller->render('login', 'login')
+#4 [internal function]: UsuarioController->login()
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-29 12:10:30 Error: [MissingLayoutException] Layout file "C:\wamp\www\promotech\aplicacao\app\View\Layouts\login.php.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(514): View->_getLayoutFileName('login.php')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(484): View->renderLayout('', 'login.php')
+#2 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render('login', 'login.php')
+#3 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): Controller->render('login', 'login.php')
+#4 [internal function]: UsuarioController->login()
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#7 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-29 12:12:27 Error: [MissingViewException] View file "C:\wamp\www\promotech\aplicacao\app\View\Usuario\.ctp" is missing.
+#0 C:\wamp\www\promotech\aplicacao\lib\Cake\View\View.php(473): View->_getViewFileName('')
+#1 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(956): View->render('', 'login')
+#2 C:\wamp\www\promotech\aplicacao\app\Controller\UsuarioController.php(16): Controller->render('', 'login')
+#3 [internal function]: UsuarioController->login()
+#4 C:\wamp\www\promotech\aplicacao\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsuarioController), Array)
+#5 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 C:\wamp\www\promotech\aplicacao\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsuarioController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-29 12:23:22 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-29 12:23:29 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 C:\wamp\www\promotech\aplicacao\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
