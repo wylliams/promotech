@@ -14,7 +14,7 @@ class CompromissoController extends AppController {
  */
 	public function index() {
 		$this->Compromisso->recursive = 0;
-		$this->set('compromisso', $this->paginate('Compromisso', array('Compromisso.deletado' => '0')));
+		$this->set('compromisso', $this->paginate('Compromisso', array('Compromisso.deletado' => '0', 'Compromisso.usuario_id' => AuthComponent::user('id'))));
 	}
 
 /**

@@ -26,9 +26,8 @@ class PrincipalController extends AppController {
 		$fimDaSemana = date("Y-m-d", mktime(0,0,0,date('m'), date('d') + 4, date('Y')));
 		if($diaDaSemana == 'segunda-feira'){
 			$arrayCampanhas = $this->Campanha->query("select * from campanha where data_inicio >= '$hoje' or data_inicio <= '$fimDaSemana'");
-			$arrayCompromissos = $this->Compromisso->query("select * from compromisso where data >= '$hoje' or data <= '$fimDaSemana'");
+			$arrayCompromissos = $this->Compromisso->query("select * from compromisso where (data >= '$hoje' or data <= '$fimDaSemana') and usuario_id = ".AuthComponent::user('id')."");
 		
-			
 			$campanhas = "<table>";
 			foreach($arrayCampanhas as $campanha){
 				$campanhas .= "<tr><td>Titulo: </td><td>".$campanha['campanha']['nome']."</td></tr>";
@@ -49,7 +48,7 @@ class PrincipalController extends AppController {
 			$Email = new CakeEmail('smtp');
 			$Email->template('default', 'default');
 			$Email->emailFormat('html');
-			$Email->to('danielhenrique_1303@hotmail.com');
+			$Email->to(AuthComponent::user('email'));
 			$Email->subject('Agenda da Semana Promotech');
 			$Email->viewVars(array('campanhas' => $campanhas, 'compromissos' => $compromissos));
 			$Email->send();
