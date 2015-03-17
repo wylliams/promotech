@@ -1,0 +1,6 @@
+| <a href='http://code.google.com/p/promotech'>Home</a> |<a href='http://code.google.com/p/promotech/wiki/Equipe'>Equipe</a>| | **Descrição do Sistema** | | <a href='http://code.google.com/p/promotech/wiki/Casos_de_Uso'>Casos de Uso</a> | |<a href='http://code.google.com/p/promotech/wiki/Diagramas'>Diagramas</a>| |<a href='http://code.google.com/p/promotech/wiki/Links'>Links</a>| |
+|:------------------------------------------------------|:------------------------------------------------------------------|:|:---------------------------|:|:--------------------------------------------------------------------------------|:|:------------------------------------------------------------------------|:|:----------------------------------------------------------------|:|
+
+# Descrição do Sistema #
+O sistema Promo Tech tem como objetivos, auxiliar nos processos administrativos de agencias de promoções de eventos. Visando manter um catalogo de clientes, fornecedores e colaboradores, além de agendar de maneira rápida e organizada atividades extras em geral.
+Permitindo que o usuário possa tornar sua empresa mais eficaz, possibilitando análises do histórico. E organizando suas atividades mais rotineiras de maneira eficiente.
